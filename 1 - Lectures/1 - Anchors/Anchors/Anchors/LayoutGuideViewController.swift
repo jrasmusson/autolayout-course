@@ -1,5 +1,5 @@
 //
-//  SafeAreaViewController.swift
+//  LayoutGuideViewController.swift
 //  Anchors
 //
 //  Created by Jonathan Rasmusson (Contractor) on 2019-06-25.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SafeAreaViewController: UIViewController {
+class LayoutGuideViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,26 +29,26 @@ class SafeAreaViewController: UIViewController {
         view.addSubview(lowerRightLabel)
 
         upperLeftLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        upperLeftLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        upperLeftLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor, constant: 0).isActive = true
 
         upperRightLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        upperRightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        upperRightLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor, constant: 0).isActive = true
 
         lowerLeftLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0).isActive = true
-        lowerLeftLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        lowerLeftLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor, constant: 0).isActive = true
 
         lowerRightLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0).isActive = true
-        lowerRightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        lowerRightLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor, constant: 0).isActive = true
     }
 
     func setupNavigationItems() {
-        navigationItem.title = "SafeAreas"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "LayoutGuides", style: .plain, target: self, action: #selector(handleLayoutGuide))
+        navigationItem.title = "LayoutGuides"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Baselines", style: .plain, target: self, action: #selector(handleBaselines))
     }
 
     // MARK: - Actions
-    @objc func handleLayoutGuide() {
-        navigationController?.pushViewController(LayoutGuideViewController(), animated: false)
+    @objc func handleBaselines() {
+        navigationController?.pushViewController(BaseLineViewController(), animated: false)
     }
 
 }

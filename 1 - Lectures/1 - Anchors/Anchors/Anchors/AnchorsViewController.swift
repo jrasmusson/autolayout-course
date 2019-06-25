@@ -48,12 +48,13 @@ class AnchorsViewController: UIViewController {
 
     // MARK: - Actions
     @objc func handleSafeAreas() {
-        navigationController?.pushViewController(SafeAreaViewController(), animated: true)
+        navigationController?.pushViewController(SafeAreaViewController(), animated: false)
     }
 
 }
 
 extension UIViewController {
+
     func makeLabel(withText text: String) -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false // important!
@@ -62,4 +63,5 @@ extension UIViewController {
 
         return label
     }
+    
 }
