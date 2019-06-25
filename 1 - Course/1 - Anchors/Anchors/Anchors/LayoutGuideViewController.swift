@@ -18,10 +18,10 @@ class LayoutGuideViewController: UIViewController {
     }
 
     func setupViews() {
-        let upperLeftLabel = makeLabel(withText: "upperLeft")
-        let upperRightLabel = makeLabel(withText: "upperRight")
-        let lowerLeftLabel = makeLabel(withText: "lowerLeft")
-        let lowerRightLabel = makeLabel(withText: "lowerRight")
+        let upperLeftLabel = Factory.makeLabel(withText: "upperLeft")
+        let upperRightLabel = Factory.makeLabel(withText: "upperRight")
+        let lowerLeftLabel = Factory.makeLabel(withText: "lowerLeft")
+        let lowerRightLabel = Factory.makeLabel(withText: "lowerRight")
 
         view.addSubview(upperLeftLabel)
         view.addSubview(upperRightLabel)
