@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AnchorsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,16 +48,12 @@ class ViewController: UIViewController {
 
     // MARK: - Actions
     @objc func handleSafeAreas() {
-//        let createCompanyController = CreateCompanyController()
-//        createCompanyController.delegate = self
-//
-//        let navController = CustomNavigationController(rootViewController: createCompanyController)
-//
-//        present(navController, animated: true, completion: nil)
+        navigationController?.pushViewController(SafeAreaViewController(), animated: true)
     }
 
-    // MARK: - Factory methods
+}
 
+extension UIViewController {
     func makeLabel(withText text: String) -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false // important!
@@ -67,4 +63,3 @@ class ViewController: UIViewController {
         return label
     }
 }
-
