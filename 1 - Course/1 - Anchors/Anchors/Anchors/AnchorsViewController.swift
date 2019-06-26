@@ -39,6 +39,10 @@ class AnchorsViewController: UIViewController {
 
         lowerRightLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
         lowerRightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
+
+        // labels have intrinsic width and height - but can also specify via anchors
+        lowerRightLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        lowerRightLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
 
     func setupNavigationItems() {

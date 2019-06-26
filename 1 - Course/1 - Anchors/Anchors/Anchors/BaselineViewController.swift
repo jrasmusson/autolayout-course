@@ -24,8 +24,7 @@ class BaseLineViewController: UIViewController {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Enter Company Name"
-        textField.font = UIFont.systemFont(ofSize: 40)
-        textField.backgroundColor = .green
+        textField.font = UIFont.systemFont(ofSize: 30)
 
         return textField
     }()
@@ -47,7 +46,7 @@ class BaseLineViewController: UIViewController {
         view.addSubview(companyTextField)
         
         companyLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        companyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -80).isActive = true
+        companyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -150).isActive = true
 
         // companyTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true // this will offset
         companyTextField.firstBaselineAnchor.constraint(equalTo: companyLabel.firstBaselineAnchor).isActive = true

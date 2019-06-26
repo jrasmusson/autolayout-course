@@ -14,6 +14,7 @@ struct Factory {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false // important!
         label.backgroundColor = .yellow
+        label.textAlignment = .center
         label.text = text
 
         return label
