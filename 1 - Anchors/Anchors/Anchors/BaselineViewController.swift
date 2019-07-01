@@ -46,11 +46,13 @@ class BaseLineViewController: UIViewController {
         view.addSubview(companyTextField)
         
         companyLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        companyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -150).isActive = true
+        companyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        companyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -150).isActive = true
 
+        companyTextField.leadingAnchor.constraint(equalTo: companyLabel.trailingAnchor, constant: 8).isActive = true
         // companyTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true // this will offset
         companyTextField.firstBaselineAnchor.constraint(equalTo: companyLabel.firstBaselineAnchor).isActive = true
-        companyTextField.leadingAnchor.constraint(equalTo: companyLabel.trailingAnchor, constant: 8).isActive = true
+
 
     }
 }
