@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Anchors
+//  AnchorsLayoutGuides
 //
-//  Created by Jonathan Rasmusson (Contractor) on 2019-06-24.
-//  Copyright © 2019 Jonathan Rasmusson. All rights reserved.
+//  Created by Jonathan Rasmusson Work Pro on 2019-07-13.
+//  Copyright © 2019 Rasmusson Software Consulting. All rights reserved.
 //
 
 import UIKit
@@ -17,13 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
-
-        let navigatorController = UINavigationController(rootViewController: AnchorsViewController())
+        
+        let navigatorController = UINavigationController(rootViewController: ViewController())
         window?.rootViewController = navigatorController
-
+        
         return true
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
