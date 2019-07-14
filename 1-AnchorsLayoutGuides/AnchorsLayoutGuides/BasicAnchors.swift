@@ -46,7 +46,16 @@ class BasicAnchors: UIViewController {
         redView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         redView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
-        // Option 1: Size explicitly... U R HERE
+        // Option 1: Size explicitly
+        // redView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        // redView.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        
+        // Option 2: Size dynamically (pinning)
+        redView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        redView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+
+        redView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
+        redView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100).isActive = true
     }
     
     func makeLabel(withText text: String) -> UILabel {

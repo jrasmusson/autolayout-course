@@ -21,7 +21,11 @@ class ViewController: UITableViewController {
 //                "Spacer Views",
 //                "Readable Content Guide"]
     
-    let labs = [Lab(name: "Basic Anchors", viewController: BasicAnchors())]
+    let labs = [
+        Lab(name: "Basic Anchors", viewController: BasicAnchors()),
+        Lab(name: "Safe Area Guide", viewController: SafeAreaGuide()),
+        Lab(name: "Layout Margin", viewController: LayoutMargin()),
+    ]
 
     
     let cellId = "cellId"
@@ -51,6 +55,6 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(labs[indexPath.row].viewController, animated: true)
+        navigationController?.pushViewController(labs[indexPath.row].viewController, animated: false)
     }
 }
