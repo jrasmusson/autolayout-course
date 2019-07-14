@@ -15,6 +15,7 @@
 		711B895822DB50C0005F7DFA /* SafeAreaGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B895722DB50C0005F7DFA /* SafeAreaGuide.swift */; };
 		711B895A22DB544A005F7DFA /* LayoutMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B895922DB544A005F7DFA /* LayoutMargin.swift */; };
 		711B895C22DB5689005F7DFA /* SpacerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B895B22DB5689005F7DFA /* SpacerViews.swift */; };
+		711B895E22DB5B97005F7DFA /* ReadableContentGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B895D22DB5B97005F7DFA /* ReadableContentGuide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		711B895722DB50C0005F7DFA /* SafeAreaGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaGuide.swift; sourceTree = "<group>"; };
 		711B895922DB544A005F7DFA /* LayoutMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMargin.swift; sourceTree = "<group>"; };
 		711B895B22DB5689005F7DFA /* SpacerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerViews.swift; sourceTree = "<group>"; };
+		711B895D22DB5B97005F7DFA /* ReadableContentGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadableContentGuide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				711B895722DB50C0005F7DFA /* SafeAreaGuide.swift */,
 				711B895922DB544A005F7DFA /* LayoutMargin.swift */,
 				711B895B22DB5689005F7DFA /* SpacerViews.swift */,
+				711B895D22DB5B97005F7DFA /* ReadableContentGuide.swift */,
 			);
 			path = AnchorsLayoutGuides;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711B895E22DB5B97005F7DFA /* ReadableContentGuide.swift in Sources */,
 				711B895822DB50C0005F7DFA /* SafeAreaGuide.swift in Sources */,
 				711B895622DA4717005F7DFA /* BasicAnchors.swift in Sources */,
 				711B895C22DB5689005F7DFA /* SpacerViews.swift in Sources */,

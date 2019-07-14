@@ -15,20 +15,14 @@ struct Lab {
 
 class ViewController: UITableViewController {
     
-//    let labs = ["Basic Anchors",
-//                "Safe Area Guide",
-//                "Layout Margin",
-//                "Spacer Views",
-//                "Readable Content Guide"]
-    
     let labs = [
         Lab(name: "Basic Anchors", viewController: BasicAnchors()),
         Lab(name: "Safe Area Guide", viewController: SafeAreaGuide()),
         Lab(name: "Layout Margins", viewController: LayoutMargin()),
         Lab(name: "Spacer Views", viewController: SpacerViews()),
+        Lab(name: "Readable Content Guide", viewController: ReadableContentGuide())
     ]
 
-    
     let cellId = "cellId"
     
     override func viewDidLoad() {
