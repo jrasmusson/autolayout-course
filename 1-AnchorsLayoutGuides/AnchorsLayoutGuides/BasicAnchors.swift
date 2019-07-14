@@ -17,7 +17,7 @@ class BasicAnchors: UIViewController {
     }
     
     func setupViews() {
-        navigationItem.title = "Anchors"
+        navigationItem.title = "Basic Anchors"
         
         let upperLeftLabel = makeLabel(withText: "upperLeft")
         let upperRightLabel = makeLabel(withText: "upperRight")
