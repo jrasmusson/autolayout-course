@@ -10,7 +10,9 @@
 		711B890722DA4225005F7DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B890622DA4225005F7DFA /* AppDelegate.swift */; };
 		711B890922DA4225005F7DFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B890822DA4225005F7DFA /* ViewController.swift */; };
 		711B890E22DA4226005F7DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711B890D22DA4226005F7DFA /* Assets.xcassets */; };
-		711B891122DA4226005F7DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711B890F22DA4226005F7DFA /* LaunchScreen.storyboard */; };
+		717E1D7722E1E28400D94900 /* OverrideLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E1D7622E1E28400D94900 /* OverrideLabel.swift */; };
+		717E1D7922E1E31400D94900 /* CHCRForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E1D7822E1E31400D94900 /* CHCRForm.swift */; };
+		717E1D7C22E1E41200D94900 /* CHCRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E1D7B22E1E41200D94900 /* CHCRImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +20,10 @@
 		711B890622DA4225005F7DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		711B890822DA4225005F7DFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		711B890D22DA4226005F7DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		711B891022DA4226005F7DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		711B891222DA4226005F7DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717E1D7622E1E28400D94900 /* OverrideLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideLabel.swift; sourceTree = "<group>"; };
+		717E1D7822E1E31400D94900 /* CHCRForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRForm.swift; sourceTree = "<group>"; };
+		717E1D7B22E1E41200D94900 /* CHCRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +58,21 @@
 			children = (
 				711B890622DA4225005F7DFA /* AppDelegate.swift */,
 				711B890822DA4225005F7DFA /* ViewController.swift */,
-				711B890D22DA4226005F7DFA /* Assets.xcassets */,
-				711B890F22DA4226005F7DFA /* LaunchScreen.storyboard */,
-				711B891222DA4226005F7DFA /* Info.plist */,
+				717E1D7622E1E28400D94900 /* OverrideLabel.swift */,
+				717E1D7822E1E31400D94900 /* CHCRForm.swift */,
+				717E1D7B22E1E41200D94900 /* CHCRImage.swift */,
+				717E1D7A22E1E3F400D94900 /* Files */,
 			);
 			path = IntrinsicContentSize;
+			sourceTree = "<group>";
+		};
+		717E1D7A22E1E3F400D94900 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				711B891222DA4226005F7DFA /* Info.plist */,
+				711B890D22DA4226005F7DFA /* Assets.xcassets */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +133,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				711B891122DA4226005F7DFA /* LaunchScreen.storyboard in Resources */,
 				711B890E22DA4226005F7DFA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,23 +144,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717E1D7C22E1E41200D94900 /* CHCRImage.swift in Sources */,
 				711B890922DA4225005F7DFA /* ViewController.swift in Sources */,
+				717E1D7922E1E31400D94900 /* CHCRForm.swift in Sources */,
+				717E1D7722E1E28400D94900 /* OverrideLabel.swift in Sources */,
 				711B890722DA4225005F7DFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		711B890F22DA4226005F7DFA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				711B891022DA4226005F7DFA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		711B891322DA4226005F7DFA /* Debug */ = {

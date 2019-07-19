@@ -8,13 +8,46 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+struct Lab {
+    let name: String
+    let viewController: UIViewController
 }
 
+class ViewController: UITableViewController {
+    
+    let labs = [
+        Lab(name: "Override Label", viewController: OverrideLabel()),
+        Lab(name: "CHCR - Form", viewController: CHCRForm()),
+        Lab(name: "CHCR - Image", viewController: CHCRImage()),
+    ]
+    
+    let cellId = "cellId"
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViews()
+    }
+    
+    func setupViews() {
+        navigationItem.title = "Intrinsic Content Size"
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        
+        cell.textLabel?.text = labs[indexPath.row].name
+        
+        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return labs.count
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(labs[indexPath.row].viewController, animated: false)
+    }
+}
