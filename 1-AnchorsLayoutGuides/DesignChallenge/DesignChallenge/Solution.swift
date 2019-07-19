@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Solution: UIViewController {
 
     let margin: CGFloat = 20
     let spacing: CGFloat = 32
@@ -102,56 +102,55 @@ class ViewController: UIViewController {
         enableNormalizationSwitch.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -margin).isActive = true
 
     }
-    
-    // MARK: - Factories
-    
-    func makeLabel(withText text: String) -> UILabel {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = text
-        label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 17)
-        
-        return label
-    }
-    
-    func makeSubLabel(withText text: String) -> UILabel {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = text
-        label.textColor = .gray
-        label.font = UIFont.systemFont(ofSize: 13)
-        label.numberOfLines = 0 // multiline
-        
-        return label
-    }
-    
-    func makeBoldLabel(withText text: String) -> UILabel {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = text
-        label.textColor = .white
-        label.font = UIFont.boldSystemFont(ofSize: 17)
-        
-        return label
-    }
-    
-    func makeSwitch(isOne: Bool) -> UISwitch {
-        let theSwitch = UISwitch()
-        theSwitch.translatesAutoresizingMaskIntoConstraints = false
-        theSwitch.isOn = isOne
-        
-        return theSwitch
-    }
-    
-    func makeProgressView() -> UIProgressView {
-        let progressView = UIProgressView(progressViewStyle: .default)
-        progressView.translatesAutoresizingMaskIntoConstraints = false
-        progressView.tintColor = .gray
-        
-        return progressView
-    }
+}
 
+// MARK: - Factories
+
+func makeLabel(withText text: String) -> UILabel {
+    let label = UILabel()
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.text = text
+    label.textColor = .white
+    label.font = UIFont.systemFont(ofSize: 17)
+    
+    return label
+}
+
+func makeSubLabel(withText text: String) -> UILabel {
+    let label = UILabel()
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.text = text
+    label.textColor = .gray
+    label.font = UIFont.systemFont(ofSize: 13)
+    label.numberOfLines = 0 // multiline
+    
+    return label
+}
+
+func makeBoldLabel(withText text: String) -> UILabel {
+    let label = UILabel()
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.text = text
+    label.textColor = .white
+    label.font = UIFont.boldSystemFont(ofSize: 17)
+    
+    return label
+}
+
+func makeSwitch(isOne: Bool) -> UISwitch {
+    let theSwitch = UISwitch()
+    theSwitch.translatesAutoresizingMaskIntoConstraints = false
+    theSwitch.isOn = isOne
+    
+    return theSwitch
+}
+
+func makeProgressView() -> UIProgressView {
+    let progressView = UIProgressView(progressViewStyle: .default)
+    progressView.translatesAutoresizingMaskIntoConstraints = false
+    progressView.tintColor = .gray
+    
+    return progressView
 }
 
 extension UINavigationController {
