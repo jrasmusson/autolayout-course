@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let margin: CGFloat = 20
+    let spacing: CGFloat = 32
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,15 @@ class ViewController: UIViewController {
         let crossfadeMaxLabel = makeSubLabel(withText: "12s")
         let crossfadeProgressView = makeProgressView()
         
+        let gaplessPlaybackLabel = makeLabel(withText: "Gapless Playback")
+        let gaplessPlaybackSwitch = makeSwitch(isOne: true)
+
+        let hideSongsLabel = makeLabel(withText: "Hide Unplayable Songs")
+        let hideSongsSwitch = makeSwitch(isOne: true)
+
+        let enableNormalizationLabel = makeLabel(withText: "Enable Audio Normalization")
+        let enableNormalizationSwitch = makeSwitch(isOne: true)
+
         view.addSubview(offlineLabel)
         view.addSubview(offlineSwitch)
         view.addSubview(offlineSublabel)
@@ -41,6 +51,15 @@ class ViewController: UIViewController {
         view.addSubview(crossfadeProgressView)
         view.addSubview(crossfadeMaxLabel)
         
+        view.addSubview(gaplessPlaybackLabel)
+        view.addSubview(gaplessPlaybackSwitch)
+
+        view.addSubview(hideSongsLabel)
+        view.addSubview(hideSongsSwitch)
+
+        view.addSubview(enableNormalizationLabel)
+        view.addSubview(enableNormalizationSwitch)
+
         offlineLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: margin).isActive = true
         offlineLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: margin).isActive = true
 
@@ -51,10 +70,10 @@ class ViewController: UIViewController {
         offlineSublabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: margin).isActive = true
         offlineSublabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -margin).isActive = true
         
-        crossfadeLabel.topAnchor.constraint(equalTo: offlineSublabel.bottomAnchor, constant: 32).isActive = true
+        crossfadeLabel.topAnchor.constraint(equalTo: offlineSublabel.bottomAnchor, constant: spacing).isActive = true
         crossfadeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 
-        crossfadeMinLabel.topAnchor.constraint(equalTo: crossfadeLabel.bottomAnchor, constant: 32).isActive = true
+        crossfadeMinLabel.topAnchor.constraint(equalTo: crossfadeLabel.bottomAnchor, constant: spacing).isActive = true
         crossfadeMinLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: margin).isActive = true
         
         crossfadeProgressView.centerYAnchor.constraint(equalTo: crossfadeMinLabel.centerYAnchor).isActive = true
@@ -63,6 +82,24 @@ class ViewController: UIViewController {
         
         crossfadeMaxLabel.centerYAnchor.constraint(equalTo: crossfadeMinLabel.centerYAnchor).isActive = true
         crossfadeMaxLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -margin).isActive = true
+        
+        gaplessPlaybackLabel.topAnchor.constraint(equalTo: crossfadeMinLabel.bottomAnchor, constant: spacing).isActive = true
+        gaplessPlaybackLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: margin).isActive = true
+        
+        gaplessPlaybackSwitch.centerYAnchor.constraint(equalTo: gaplessPlaybackLabel.centerYAnchor).isActive = true
+        gaplessPlaybackSwitch.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -margin).isActive = true
+
+        hideSongsLabel.topAnchor.constraint(equalTo: gaplessPlaybackLabel.bottomAnchor, constant: spacing).isActive = true
+        hideSongsLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: margin).isActive = true
+        
+        hideSongsSwitch.centerYAnchor.constraint(equalTo: hideSongsLabel.centerYAnchor).isActive = true
+        hideSongsSwitch.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -margin).isActive = true
+
+        enableNormalizationLabel.topAnchor.constraint(equalTo: hideSongsLabel.bottomAnchor, constant: spacing).isActive = true
+        enableNormalizationLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: margin).isActive = true
+        
+        enableNormalizationSwitch.centerYAnchor.constraint(equalTo: enableNormalizationLabel.centerYAnchor).isActive = true
+        enableNormalizationSwitch.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -margin).isActive = true
 
     }
     
