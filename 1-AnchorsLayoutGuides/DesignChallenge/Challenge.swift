@@ -26,7 +26,7 @@ class Challenge: UIViewController {
     func setupViews() {
         // Comment in incrementally when ready...
         
-//        let offlineLabel = makeLabel(withText: "Offline")
+        let offlineLabel = makeLabel(withText: "Offline")
 //        let offlineSwitch = makeSwitch(isOne: false)
 //        let offlineSublabel = makeSubLabel(withText: "When you go offline, you'll only be able to play the music and podcasts you've downloaded.")
 //
