@@ -16,22 +16,23 @@ class ViewController: UIViewController {
     }
     
     func setupViews() {
-        let image = makeImageView(named: "rush")
+        let albumImage = makeImageView(named: "rush")
         let titleLabel = makeTitleLabel(withText: "Tom Sawyer")
         let albumLabel = makeAlbumLabel(withText: "Rush · Moving Pictures (2011 Remaster)")
+        let playButtomImage = makeImageView(named: "play") // U R HERE
         let button = makeButton(withText: "PLAY ON SPOTIFY")
         
-        view.addSubview(image)
+        view.addSubview(albumImage)
         view.addSubview(titleLabel)
         view.addSubview(albumLabel)
         view.addSubview(button)
         
-        image.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        image.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        image.heightAnchor.constraint(equalTo: image.widthAnchor, multiplier: 1).isActive = true
-        image.widthAnchor.constraint(equalToConstant: view.bounds.width).isActive = true
+        albumImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        albumImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        albumImage.heightAnchor.constraint(equalTo: albumImage.widthAnchor, multiplier: 1).isActive = true
+        albumImage.widthAnchor.constraint(equalToConstant: view.bounds.width).isActive = true
         
-        titleLabel.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 8).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: albumImage.bottomAnchor, constant: 8).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
 
@@ -73,7 +74,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = text
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .lightGray
         label.backgroundColor = .yellow
         
