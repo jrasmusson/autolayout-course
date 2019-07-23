@@ -20,14 +20,14 @@ class ViewController: UIViewController {
     func setupViews() {
         let albumImage = makeImageView(named: "rush")
         let trackLabel = makeTrackLabel(withText: "Tom Sawyer")
-        let albumLabel = makeAlbumLabel(withText: "Rush · Moving Pictures (2011 Remaster)")
+        let albumLabel = makeAlbumLabel(withText: "Rush • Moving Pictures (2011 Remaster)")
 
         let playButton = makePlayButton()
         let previewStartLabel = makePreviewLabel(withText: "0:00")
         let previewEndLabel = makePreviewLabel(withText: "0:30")
         let progressView = makeProgressView()
 
-        let button = makeSpotifyButton(withText: "PLAY ON SPOTIFY")
+        let spotifyButton = makeSpotifyButton(withText: "PLAY ON SPOTIFY")
         
         view.addSubview(albumImage)
         view.addSubview(trackLabel)
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         view.addSubview(progressView)
         view.addSubview(previewEndLabel)
 
-        view.addSubview(button)
+        view.addSubview(spotifyButton)
         
         albumImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         albumImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -68,11 +68,12 @@ class ViewController: UIViewController {
         previewEndLabel.leadingAnchor.constraint(equalTo: progressView.trailingAnchor, constant: 8).isActive = true
         previewEndLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
 
-        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        button.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
-        button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -8).isActive = true
+        spotifyButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        spotifyButton.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 32).isActive = true
+        spotifyButton.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
 
-
+        // spotifyButton.heightAnchor we need to set to get our nice rounded corners - height is fixed
+        // spotifyButton.widthAnchor we don't need to set because the intrinsic content size and insets are enough - width is dynamic
     }
     
     public func makeImageView(named: String) -> UIImageView {
@@ -95,7 +96,6 @@ class ViewController: UIViewController {
         label.text = text
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.backgroundColor = .yellow
         
         return label
     }
@@ -107,8 +107,7 @@ class ViewController: UIViewController {
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .lightGray
-        label.backgroundColor = .yellow
-        
+
         return label
     }
 
@@ -129,7 +128,6 @@ class ViewController: UIViewController {
         label.text = text
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 10)
-        label.backgroundColor = .yellow
 
         return label
     }
@@ -145,16 +143,20 @@ class ViewController: UIViewController {
     func makeSpotifyButton(withText title: String) -> UIButton {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(title, for: .normal)
-        button.titleLabel?.minimumScaleFactor = 0.5
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        button.titleLabel?.adjustsFontSizeToFitWidth = true
+        button.titleLabel?.minimumScaleFactor = 0.5 // default 0
+        button.titleLabel?.adjustsFontSizeToFitWidth = true // default false
         button.backgroundColor = .spotifyGreen
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = buttonHeight / 2
         button.contentEdgeInsets = UIEdgeInsets(top: 10, left: buttonHeight, bottom: 10, right: buttonHeight)
 
-        // You are here - add kerning
+        let attributedText = NSMutableAttributedString(string: title, attributes: [
+            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.kern: 1
+            ])
+
+        button.setAttributedTitle(attributedText, for: .normal) // Note how not button.setTitle()
 
         return button
     }
