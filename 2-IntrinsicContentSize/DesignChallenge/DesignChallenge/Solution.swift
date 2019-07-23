@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Solution: UIViewController {
 
     let buttonHeight: CGFloat = 40
 
@@ -161,8 +161,4 @@ class ViewController: UIViewController {
         return button
     }
 
-}
-
-extension UIColor {
-    static let spotifyGreen = UIColor(red: 28/255, green: 184/255, blue: 89/255, alpha: 1)
 }
