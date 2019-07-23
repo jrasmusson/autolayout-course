@@ -54,14 +54,22 @@
 		7113FC2822E5E52600E53EE7 /* DesignChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				71E16EE622E7AC4E00E4CE4E /* Files */,
 				7113FC2922E5E52600E53EE7 /* AppDelegate.swift */,
 				7113FC2B22E5E52600E53EE7 /* Solution.swift */,
-				7113FC3022E5E52700E53EE7 /* Assets.xcassets */,
-				7113FC3222E5E52700E53EE7 /* LaunchScreen.storyboard */,
-				7113FC3522E5E52700E53EE7 /* Info.plist */,
 				71E16EE422E7AA5B00E4CE4E /* Challenge.swift */,
 			);
 			path = DesignChallenge;
+			sourceTree = "<group>";
+		};
+		71E16EE622E7AC4E00E4CE4E /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				7113FC3522E5E52700E53EE7 /* Info.plist */,
+				7113FC3222E5E52700E53EE7 /* LaunchScreen.storyboard */,
+				7113FC3022E5E52700E53EE7 /* Assets.xcassets */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

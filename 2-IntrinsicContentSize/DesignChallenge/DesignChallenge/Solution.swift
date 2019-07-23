@@ -82,8 +82,7 @@ class Solution: UIViewController {
         view.contentMode = .scaleAspectFit
         view.image = UIImage(named: named)
         
-        // By making the image hug itself a little bit less and less resistant to being compressed
-        // we allow the image to stretch and grow as required
+        // Stretch and grow
         view.setContentHuggingPriority(UILayoutPriority(rawValue: 249), for: .vertical)
         view.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 749), for: .vertical)
         

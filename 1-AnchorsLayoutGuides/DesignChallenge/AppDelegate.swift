@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .black
         window?.makeKeyAndVisible()
 
-        let navigatorController = UINavigationController(rootViewController: Solution())
+        let navigatorController = UINavigationController(rootViewController: Challenge())
+//        let navigatorController = UINavigationController(rootViewController: Solution())
+
         window?.rootViewController = navigatorController
 
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]

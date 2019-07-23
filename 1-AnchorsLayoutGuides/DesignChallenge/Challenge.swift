@@ -24,9 +24,9 @@ class Challenge: UIViewController {
     }
     
     func setupViews() {
-        // Comment in incrementally when ready...
-        
-        let offlineLabel = makeLabel(withText: "Offline")
+
+        // Comment in incrementally ...
+//        let offlineLabel = makeLabel(withText: "Offline")
 //        let offlineSwitch = makeSwitch(isOne: false)
 //        let offlineSublabel = makeSubLabel(withText: "When you go offline, you'll only be able to play the music and podcasts you've downloaded.")
 //
@@ -43,9 +43,30 @@ class Challenge: UIViewController {
 //
 //        let enableNormalizationLabel = makeLabel(withText: "Enable Audio Normalization")
 //        let enableNormalizationSwitch = makeSwitch(isOne: true)
-        
-        // Add your views
-        
-        // Do your layout
+//
+//        view.addSubview(offlineLabel)
+//        view.addSubview(offlineSwitch)
+//        view.addSubview(offlineSublabel)
+//
+//        view.addSubview(crossfadeLabel)
+//        view.addSubview(crossfadeMinLabel)
+//        view.addSubview(crossfadeProgressView)
+//        view.addSubview(crossfadeMaxLabel)
+//
+//        view.addSubview(gaplessPlaybackLabel)
+//        view.addSubview(gaplessPlaybackSwitch)
+//
+//        view.addSubview(hideSongsLabel)
+//        view.addSubview(hideSongsSwitch)
+//
+//        view.addSubview(enableNormalizationLabel)
+//        view.addSubview(enableNormalizationSwitch)
+
+        // Start your layout here...
+
     }
+}
+
+extension UIColor {
+    static let offBlack = UIColor(red: 25/255, green: 25/255, blue: 25/255, alpha: 1)
 }
