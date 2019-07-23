@@ -154,6 +154,8 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = buttonHeight / 2
         button.contentEdgeInsets = UIEdgeInsets(top: 10, left: buttonHeight, bottom: 10, right: buttonHeight)
 
+        // You are here - add kerning
+
         return button
     }
 
