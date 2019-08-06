@@ -58,43 +58,5 @@ class BasicAnchors: UIViewController {
         redView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100).isActive = true
     }
 
-    func makeLabel(withText text: String) -> UILabel {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false // important!
-        label.backgroundColor = .yellow
-        label.textAlignment = .center
-        label.text = text
-
-        return label
-    }
-
-    func makeSecondaryLabel(withText text: String) -> UILabel {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.backgroundColor = .yellow
-        label.textAlignment = .center
-        label.text = text
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = .gray
-
-        return label
-    }
-
-    func makeButton(withText text: String) -> UIButton {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(text, for: .normal)
-        button.backgroundColor = .blue
-
-        return button
-    }
-
-    func makeView() -> UIView {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .red
-
-        return view
-    }
 }
 

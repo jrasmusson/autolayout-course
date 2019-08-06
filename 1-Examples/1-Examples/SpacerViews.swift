@@ -60,21 +60,4 @@ class SpacerViews: UIViewController {
         cancelButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 
-    func makeButton(withText text: String, color: UIColor) -> UIButton {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(text, for: .normal)
-        button.titleLabel?.adjustsFontSizeToFitWidth = true
-        button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
-        button.backgroundColor = color
-
-        return button
-    }
-
 }
-
-extension UIColor {
-    static let darkBlue = UIColor(red: 10/255, green: 132/255, blue: 255/255, alpha: 1)
-    static let darkGreen = UIColor(red: 48/255, green: 209/255, blue: 88/255, alpha: 1)
-}
-
