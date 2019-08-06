@@ -22,6 +22,8 @@
 		7131726F22F9C45900575BBF /* CHCRForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131726E22F9C45900575BBF /* CHCRForm.swift */; };
 		7131727122F9C46400575BBF /* CHCRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131727022F9C46400575BBF /* CHCRImage.swift */; };
 		7131727322F9C47A00575BBF /* IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131727222F9C47A00575BBF /* IntrinsicContentSize.swift */; };
+		71D6E00F22F9C67200400984 /* StackViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6E00E22F9C67200400984 /* StackViews.swift */; };
+		71D6E01122F9C6BF00400984 /* SimpleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6E01022F9C6BF00400984 /* SimpleStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		7131726E22F9C45900575BBF /* CHCRForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRForm.swift; sourceTree = "<group>"; };
 		7131727022F9C46400575BBF /* CHCRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRImage.swift; sourceTree = "<group>"; };
 		7131727222F9C47A00575BBF /* IntrinsicContentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicContentSize.swift; sourceTree = "<group>"; };
+		71D6E00E22F9C67200400984 /* StackViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViews.swift; sourceTree = "<group>"; };
+		71D6E01022F9C6BF00400984 /* SimpleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			children = (
 				7131725922F9BF6C00575BBF /* Files */,
 				7131725A22F9BF9300575BBF /* Anchors */,
+				71D6E00D22F9C63100400984 /* StackViews */,
 				7131726B22F9C3FA00575BBF /* IntrinsicContentSize */,
 				7131724922F9BF4700575BBF /* ViewController.swift */,
 				7131726922F9C1E400575BBF /* Factories.swift */,
@@ -116,6 +121,15 @@
 				7131727022F9C46400575BBF /* CHCRImage.swift */,
 			);
 			name = IntrinsicContentSize;
+			sourceTree = "<group>";
+		};
+		71D6E00D22F9C63100400984 /* StackViews */ = {
+			isa = PBXGroup;
+			children = (
+				71D6E00E22F9C67200400984 /* StackViews.swift */,
+				71D6E01022F9C6BF00400984 /* SimpleStackView.swift */,
+			);
+			name = StackViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,12 +207,14 @@
 				7131724A22F9BF4700575BBF /* ViewController.swift in Sources */,
 				7131726D22F9C44900575BBF /* OverrideLabel.swift in Sources */,
 				7131726222F9C09D00575BBF /* LayoutMargins.swift in Sources */,
+				71D6E01122F9C6BF00400984 /* SimpleStackView.swift in Sources */,
 				7131726F22F9C45900575BBF /* CHCRForm.swift in Sources */,
 				7131726822F9C0C600575BBF /* ReadableContentGuides.swift in Sources */,
 				7131725E22F9C08200575BBF /* BasicAnchors.swift in Sources */,
 				7131726622F9C0B500575BBF /* SpacerViews.swift in Sources */,
 				7131727322F9C47A00575BBF /* IntrinsicContentSize.swift in Sources */,
 				7131724822F9BF4700575BBF /* AppDelegate.swift in Sources */,
+				71D6E00F22F9C67200400984 /* StackViews.swift in Sources */,
 				7131726022F9C09000575BBF /* SafeAreaGuide.swift in Sources */,
 				7131725C22F9C05E00575BBF /* Anchors.swift in Sources */,
 			);

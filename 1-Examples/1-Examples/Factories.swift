@@ -57,6 +57,26 @@ func makeButton(withText text: String, color: UIColor) -> UIButton {
 
 // MKAR: - Misc
 
+func makeTextField(withPlaceholderText placeHolderText: String) -> UITextField {
+    let textField = UITextField()
+    textField.translatesAutoresizingMaskIntoConstraints = false
+    textField.placeholder = placeHolderText
+    textField.backgroundColor = .orange
+
+    return textField
+}
+
+func makeStackView(withOrientation axis: NSLayoutConstraint.Axis) -> UIStackView {
+    let stackView = UIStackView()
+    stackView.translatesAutoresizingMaskIntoConstraints = false
+    stackView.axis = axis
+    stackView.distribution = .fill
+    stackView.alignment = .fill
+    stackView.spacing = 8.0
+
+    return stackView
+}
+
 func makeView() -> UIView {
     let view = UIView()
     view.translatesAutoresizingMaskIntoConstraints = false

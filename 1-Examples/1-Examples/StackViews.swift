@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StackViews.swift
 //  1-Examples
 //
 //  Created by Jonathan Rasmusson Work Pro on 2019-07-13.
@@ -8,17 +8,10 @@
 
 import UIKit
 
-struct Lab {
-    let name: String
-    let viewController: UIViewController
-}
-
-class ViewController: UITableViewController {
+class StackViews: UITableViewController {
 
     let labs = [
-        Lab(name: "Anchors", viewController: Anchors()),
-        Lab(name: "Intrinsic Content Size", viewController: IntrinsicContentSize()),
-        Lab(name: "Stack Views", viewController: StackViews()),
+        Lab(name: "Simple StackView", viewController: SimpleStackView()),
     ]
 
     let cellId = "cellId"
@@ -29,7 +22,7 @@ class ViewController: UITableViewController {
     }
 
     func setupViews() {
-        navigationItem.title = "Examples"
+        navigationItem.title = "Stack Views"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
 
@@ -51,3 +44,4 @@ class ViewController: UITableViewController {
         navigationController?.pushViewController(labs[indexPath.row].viewController, animated: false)
     }
 }
+
