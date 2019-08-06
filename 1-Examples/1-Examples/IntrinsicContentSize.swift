@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  IntrinsicContentSize.swift
 //  1-Examples
 //
 //  Created by Jonathan Rasmusson Work Pro on 2019-07-13.
@@ -8,16 +8,12 @@
 
 import UIKit
 
-struct Lab {
-    let name: String
-    let viewController: UIViewController
-}
-
-class ViewController: UITableViewController {
+class IntrinsicContentSize: UITableViewController {
 
     let labs = [
-        Lab(name: "Anchors", viewController: Anchors()),
-        Lab(name: "Intrinsic Content Size", viewController: IntrinsicContentSize()),
+        Lab(name: "Override Label", viewController: OverrideLabel()),
+        Lab(name: "CHCR - Form", viewController: CHCRForm()),
+        Lab(name: "CHCR - Image", viewController: CHCRImage()),
     ]
 
     let cellId = "cellId"
@@ -28,7 +24,7 @@ class ViewController: UITableViewController {
     }
 
     func setupViews() {
-        navigationItem.title = "Examples"
+        navigationItem.title = "Intrinsic Content Size"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
 
@@ -50,3 +46,4 @@ class ViewController: UITableViewController {
         navigationController?.pushViewController(labs[indexPath.row].viewController, animated: false)
     }
 }
+
