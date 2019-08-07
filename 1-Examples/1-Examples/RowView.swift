@@ -29,8 +29,18 @@ class RowView: UIView {
 
         titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: onOffSwith.leadingAnchor, constant: -8).isActive = true
 
         onOffSwith.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         onOffSwith.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor).isActive = true
+
+        // U R HERE
+        // Demo how to pin stack view to sides (resolve ambiguity)
+        // Also how what it would take if we wanted keep centered in middle by
+        // - adding gap constraint
+        // - intrinsic content size
     }
-}
+
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: UIView.noIntrinsicMetric, height: 31)
+    }}

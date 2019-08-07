@@ -24,8 +24,15 @@ class CustomView: UIViewController {
 
         view.addSubview(stackView)
 
+        //        stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        //        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        //        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        //        stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
         stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+
+
     }
 
 }
