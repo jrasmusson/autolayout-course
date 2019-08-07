@@ -85,10 +85,10 @@ func makeView() -> UIView {
     return view
 }
 
-func makeSwitch(isOne: Bool) -> UISwitch {
+func makeSwitch(isOn: Bool) -> UISwitch {
     let theSwitch = UISwitch()
     theSwitch.translatesAutoresizingMaskIntoConstraints = false
-    theSwitch.isOn = isOne
+    theSwitch.isOn = isOn
 
     return theSwitch
 }

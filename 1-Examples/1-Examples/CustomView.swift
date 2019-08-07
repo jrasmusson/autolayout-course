@@ -18,14 +18,10 @@ class CustomView: UIViewController {
     func setupViews() {
 
         // custom view
-        let emailTextField = makeTextField(withPlaceholderText: "email address")
-        let passwordTextField = makeTextField(withPlaceholderText: "password")
-        let loginButton = makeButton(withText: "Login")
+        let row1 = RowView()
 
         let stackView = makeStackView(withOrientation: .vertical)
-        stackView.addArrangedSubview(emailTextField)
-        stackView.addArrangedSubview(passwordTextField)
-        stackView.addArrangedSubview(loginButton)
+        stackView.addArrangedSubview(row1)
 
         view.addSubview(stackView)
 
