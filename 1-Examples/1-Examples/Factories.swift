@@ -85,6 +85,14 @@ func makeView() -> UIView {
     return view
 }
 
+func makeSwitch(isOne: Bool) -> UISwitch {
+    let theSwitch = UISwitch()
+    theSwitch.translatesAutoresizingMaskIntoConstraints = false
+    theSwitch.isOn = isOne
+
+    return theSwitch
+}
+
 extension UIColor {
     static let darkBlue = UIColor(red: 10/255, green: 132/255, blue: 255/255, alpha: 1)
     static let darkGreen = UIColor(red: 48/255, green: 209/255, blue: 88/255, alpha: 1)

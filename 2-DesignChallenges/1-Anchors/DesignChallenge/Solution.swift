@@ -25,7 +25,7 @@ class Solution: UIViewController {
 
     func setupViews() {
         let offlineLabel = makeLabel(withText: "Offline")
-        let offlineSwitch = makeSwitch(isOne: false)
+        let offlineSwitch = makeSwitch(isOn: false)
         let offlineSublabel = makeSubLabel(withText: "When you go offline, you'll only be able to play the music and podcasts you've downloaded.")
         
         let crossfadeLabel = makeBoldLabel(withText: "Crossfade")
@@ -34,13 +34,13 @@ class Solution: UIViewController {
         let crossfadeProgressView = makeProgressView()
         
         let gaplessPlaybackLabel = makeLabel(withText: "Gapless Playback")
-        let gaplessPlaybackSwitch = makeSwitch(isOne: true)
+        let gaplessPlaybackSwitch = makeSwitch(isOn: true)
 
         let hideSongsLabel = makeLabel(withText: "Hide Unplayable Songs")
-        let hideSongsSwitch = makeSwitch(isOne: true)
+        let hideSongsSwitch = makeSwitch(isOn: true)
 
         let enableNormalizationLabel = makeLabel(withText: "Enable Audio Normalization")
-        let enableNormalizationSwitch = makeSwitch(isOne: true)
+        let enableNormalizationSwitch = makeSwitch(isOn: true)
 
         view.addSubview(offlineLabel)
         view.addSubview(offlineSwitch)
@@ -137,10 +137,10 @@ func makeBoldLabel(withText text: String) -> UILabel {
     return label
 }
 
-func makeSwitch(isOne: Bool) -> UISwitch {
+func makeSwitch(isOn: Bool) -> UISwitch {
     let theSwitch = UISwitch()
     theSwitch.translatesAutoresizingMaskIntoConstraints = false
-    theSwitch.isOn = isOne
+    theSwitch.isOn = isOn
     
     return theSwitch
 }

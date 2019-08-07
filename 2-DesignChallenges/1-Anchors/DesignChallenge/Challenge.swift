@@ -27,7 +27,7 @@ class Challenge: UIViewController {
 
         // Comment in incrementally ...
 //        let offlineLabel = makeLabel(withText: "Offline")
-//        let offlineSwitch = makeSwitch(isOne: false)
+//        let offlineSwitch = makeSwitch(isOn: false)
 //        let offlineSublabel = makeSubLabel(withText: "When you go offline, you'll only be able to play the music and podcasts you've downloaded.")
 //
 //        let crossfadeLabel = makeBoldLabel(withText: "Crossfade")
@@ -36,13 +36,13 @@ class Challenge: UIViewController {
 //        let crossfadeProgressView = makeProgressView()
 //
 //        let gaplessPlaybackLabel = makeLabel(withText: "Gapless Playback")
-//        let gaplessPlaybackSwitch = makeSwitch(isOne: true)
+//        let gaplessPlaybackSwitch = makeSwitch(isOn: true)
 //
 //        let hideSongsLabel = makeLabel(withText: "Hide Unplayable Songs")
-//        let hideSongsSwitch = makeSwitch(isOne: true)
+//        let hideSongsSwitch = makeSwitch(isOn: true)
 //
 //        let enableNormalizationLabel = makeLabel(withText: "Enable Audio Normalization")
-//        let enableNormalizationSwitch = makeSwitch(isOne: true)
+//        let enableNormalizationSwitch = makeSwitch(isOn: true)
 //
 //        view.addSubview(offlineLabel)
 //        view.addSubview(offlineSwitch)

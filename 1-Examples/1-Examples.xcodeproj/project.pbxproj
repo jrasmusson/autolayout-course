@@ -22,6 +22,8 @@
 		7131726F22F9C45900575BBF /* CHCRForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131726E22F9C45900575BBF /* CHCRForm.swift */; };
 		7131727122F9C46400575BBF /* CHCRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131727022F9C46400575BBF /* CHCRImage.swift */; };
 		7131727322F9C47A00575BBF /* IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131727222F9C47A00575BBF /* IntrinsicContentSize.swift */; };
+		7185E0A022FB148100DFC3DE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E09F22FB148100DFC3DE /* CustomView.swift */; };
+		7185E0A322FB154200DFC3DE /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E0A222FB154200DFC3DE /* RowView.swift */; };
 		71D6E00F22F9C67200400984 /* StackViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6E00E22F9C67200400984 /* StackViews.swift */; };
 		71D6E01122F9C6BF00400984 /* SimpleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6E01022F9C6BF00400984 /* SimpleStackView.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		7131726E22F9C45900575BBF /* CHCRForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRForm.swift; sourceTree = "<group>"; };
 		7131727022F9C46400575BBF /* CHCRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRImage.swift; sourceTree = "<group>"; };
 		7131727222F9C47A00575BBF /* IntrinsicContentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicContentSize.swift; sourceTree = "<group>"; };
+		7185E09F22FB148100DFC3DE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		7185E0A222FB154200DFC3DE /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		71D6E00E22F9C67200400984 /* StackViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViews.swift; sourceTree = "<group>"; };
 		71D6E01022F9C6BF00400984 /* SimpleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,9 +127,19 @@
 			name = IntrinsicContentSize;
 			sourceTree = "<group>";
 		};
+		7185E0A122FB150600DFC3DE /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				7185E09F22FB148100DFC3DE /* CustomView.swift */,
+				7185E0A222FB154200DFC3DE /* RowView.swift */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
 		71D6E00D22F9C63100400984 /* StackViews */ = {
 			isa = PBXGroup;
 			children = (
+				7185E0A122FB150600DFC3DE /* CustomView */,
 				71D6E00E22F9C67200400984 /* StackViews.swift */,
 				71D6E01022F9C6BF00400984 /* SimpleStackView.swift */,
 			);
@@ -203,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7131726A22F9C1E400575BBF /* Factories.swift in Sources */,
+				7185E0A022FB148100DFC3DE /* CustomView.swift in Sources */,
 				7131727122F9C46400575BBF /* CHCRImage.swift in Sources */,
 				7131724A22F9BF4700575BBF /* ViewController.swift in Sources */,
 				7131726D22F9C44900575BBF /* OverrideLabel.swift in Sources */,
@@ -210,6 +225,7 @@
 				71D6E01122F9C6BF00400984 /* SimpleStackView.swift in Sources */,
 				7131726F22F9C45900575BBF /* CHCRForm.swift in Sources */,
 				7131726822F9C0C600575BBF /* ReadableContentGuides.swift in Sources */,
+				7185E0A322FB154200DFC3DE /* RowView.swift in Sources */,
 				7131725E22F9C08200575BBF /* BasicAnchors.swift in Sources */,
 				7131726622F9C0B500575BBF /* SpacerViews.swift in Sources */,
 				7131727322F9C47A00575BBF /* IntrinsicContentSize.swift in Sources */,
