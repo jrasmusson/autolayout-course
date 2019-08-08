@@ -136,12 +136,20 @@
 			name = CustomView;
 			sourceTree = "<group>";
 		};
+		71C833ED22FCD270004E33AD /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				71D6E01022F9C6BF00400984 /* SimpleStackView.swift */,
+			);
+			name = Simple;
+			sourceTree = "<group>";
+		};
 		71D6E00D22F9C63100400984 /* StackViews */ = {
 			isa = PBXGroup;
 			children = (
-				7185E0A122FB150600DFC3DE /* CustomView */,
 				71D6E00E22F9C67200400984 /* StackViews.swift */,
-				71D6E01022F9C6BF00400984 /* SimpleStackView.swift */,
+				71C833ED22FCD270004E33AD /* Simple */,
+				7185E0A122FB150600DFC3DE /* CustomView */,
 			);
 			name = StackViews;
 			sourceTree = "<group>";

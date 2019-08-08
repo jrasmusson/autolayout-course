@@ -11,7 +11,7 @@ import UIKit
 class StackViews: UITableViewController {
 
     let labs = [
-        Lab(name: "Simple StackView", viewController: SimpleStackView()),
+        Lab(name: "Simple", viewController: SimpleStackView()),
         Lab(name: "Custom View", viewController: CustomView()),
     ]
 
