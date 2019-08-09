@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "Fill Equally", viewController: FillEqually()),
             Lab(name: "Equal Spacing", viewController: EqualSpacing()),
             Lab(name: "Equal Centering", viewController: EqualCentering()),
+            Lab(name: "CHCR Fill", viewController: CHCRFill()),
         ]
         
         let distributionViewController = LabViewController(labs: distributionLabs, navBarTitle: "Distributions")
