@@ -14,7 +14,6 @@
 		7131724822F9BF4700575BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131724722F9BF4700575BBF /* AppDelegate.swift */; };
 		7131724F22F9BF4800575BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7131724E22F9BF4800575BBF /* Assets.xcassets */; };
 		7131725222F9BF4800575BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7131725022F9BF4800575BBF /* LaunchScreen.storyboard */; };
-		7131725C22F9C05E00575BBF /* Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131725B22F9C05E00575BBF /* Anchors.swift */; };
 		7131725E22F9C08200575BBF /* BasicAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131725D22F9C08200575BBF /* BasicAnchors.swift */; };
 		7131726022F9C09000575BBF /* SafeAreaGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131725F22F9C09000575BBF /* SafeAreaGuide.swift */; };
 		7131726222F9C09D00575BBF /* LayoutMargins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131726122F9C09D00575BBF /* LayoutMargins.swift */; };
@@ -24,10 +23,8 @@
 		7131726D22F9C44900575BBF /* OverrideLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131726C22F9C44900575BBF /* OverrideLabel.swift */; };
 		7131726F22F9C45900575BBF /* CHCRForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131726E22F9C45900575BBF /* CHCRForm.swift */; };
 		7131727122F9C46400575BBF /* CHCRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131727022F9C46400575BBF /* CHCRImage.swift */; };
-		7131727322F9C47A00575BBF /* IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131727222F9C47A00575BBF /* IntrinsicContentSize.swift */; };
 		7185E0A022FB148100DFC3DE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E09F22FB148100DFC3DE /* CustomView.swift */; };
 		7185E0A322FB154200DFC3DE /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E0A222FB154200DFC3DE /* RowView.swift */; };
-		71D6E00F22F9C67200400984 /* StackViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6E00E22F9C67200400984 /* StackViews.swift */; };
 		71D6E01122F9C6BF00400984 /* SimpleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6E01022F9C6BF00400984 /* SimpleStackView.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +38,6 @@
 		7131724E22F9BF4800575BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7131725122F9BF4800575BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7131725322F9BF4800575BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7131725B22F9C05E00575BBF /* Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchors.swift; sourceTree = "<group>"; };
 		7131725D22F9C08200575BBF /* BasicAnchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnchors.swift; sourceTree = "<group>"; };
 		7131725F22F9C09000575BBF /* SafeAreaGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaGuide.swift; sourceTree = "<group>"; };
 		7131726122F9C09D00575BBF /* LayoutMargins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMargins.swift; sourceTree = "<group>"; };
@@ -51,10 +47,8 @@
 		7131726C22F9C44900575BBF /* OverrideLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideLabel.swift; sourceTree = "<group>"; };
 		7131726E22F9C45900575BBF /* CHCRForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRForm.swift; sourceTree = "<group>"; };
 		7131727022F9C46400575BBF /* CHCRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRImage.swift; sourceTree = "<group>"; };
-		7131727222F9C47A00575BBF /* IntrinsicContentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicContentSize.swift; sourceTree = "<group>"; };
 		7185E09F22FB148100DFC3DE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		7185E0A222FB154200DFC3DE /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
-		71D6E00E22F9C67200400984 /* StackViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViews.swift; sourceTree = "<group>"; };
 		71D6E01022F9C6BF00400984 /* SimpleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,30 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		712F3A8B22FDC24F00345A0C /* Scrollable */ = {
-			isa = PBXGroup;
-			children = (
-				712F3A8C22FDC28700345A0C /* ScrollableView.swift */,
-			);
-			name = Scrollable;
-			sourceTree = "<group>";
-		};
-		712F3A8E22FDD8C400345A0C /* Padding */ = {
-			isa = PBXGroup;
-			children = (
-				712F3A8F22FDD8E300345A0C /* PaddingView.swift */,
-			);
-			name = Padding;
-			sourceTree = "<group>";
-		};
-		712F3A9122FDD98000345A0C /* Spacers */ = {
-			isa = PBXGroup;
-			children = (
-				712F3A9222FDD99800345A0C /* StackSpacerView.swift */,
-			);
-			name = Spacers;
-			sourceTree = "<group>";
-		};
 		7131723B22F9BF4700575BBF = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +106,6 @@
 		7131725A22F9BF9300575BBF /* Anchors */ = {
 			isa = PBXGroup;
 			children = (
-				7131725B22F9C05E00575BBF /* Anchors.swift */,
 				7131725D22F9C08200575BBF /* BasicAnchors.swift */,
 				7131725F22F9C09000575BBF /* SafeAreaGuide.swift */,
 				7131726122F9C09D00575BBF /* LayoutMargins.swift */,
@@ -149,7 +118,6 @@
 		7131726B22F9C3FA00575BBF /* IntrinsicContentSize */ = {
 			isa = PBXGroup;
 			children = (
-				7131727222F9C47A00575BBF /* IntrinsicContentSize.swift */,
 				7131726C22F9C44900575BBF /* OverrideLabel.swift */,
 				7131726E22F9C45900575BBF /* CHCRForm.swift */,
 				7131727022F9C46400575BBF /* CHCRImage.swift */,
@@ -157,32 +125,15 @@
 			name = IntrinsicContentSize;
 			sourceTree = "<group>";
 		};
-		7185E0A122FB150600DFC3DE /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				7185E09F22FB148100DFC3DE /* CustomView.swift */,
-				7185E0A222FB154200DFC3DE /* RowView.swift */,
-			);
-			name = CustomView;
-			sourceTree = "<group>";
-		};
-		71C833ED22FCD270004E33AD /* Simple */ = {
-			isa = PBXGroup;
-			children = (
-				71D6E01022F9C6BF00400984 /* SimpleStackView.swift */,
-			);
-			name = Simple;
-			sourceTree = "<group>";
-		};
 		71D6E00D22F9C63100400984 /* StackViews */ = {
 			isa = PBXGroup;
 			children = (
-				71D6E00E22F9C67200400984 /* StackViews.swift */,
-				71C833ED22FCD270004E33AD /* Simple */,
-				7185E0A122FB150600DFC3DE /* CustomView */,
-				712F3A8B22FDC24F00345A0C /* Scrollable */,
-				712F3A8E22FDD8C400345A0C /* Padding */,
-				712F3A9122FDD98000345A0C /* Spacers */,
+				71D6E01022F9C6BF00400984 /* SimpleStackView.swift */,
+				7185E09F22FB148100DFC3DE /* CustomView.swift */,
+				7185E0A222FB154200DFC3DE /* RowView.swift */,
+				712F3A8C22FDC28700345A0C /* ScrollableView.swift */,
+				712F3A8F22FDD8E300345A0C /* PaddingView.swift */,
+				712F3A9222FDD99800345A0C /* StackSpacerView.swift */,
 			);
 			name = StackViews;
 			sourceTree = "<group>";
@@ -271,11 +222,8 @@
 				7185E0A322FB154200DFC3DE /* RowView.swift in Sources */,
 				7131725E22F9C08200575BBF /* BasicAnchors.swift in Sources */,
 				7131726622F9C0B500575BBF /* SpacerViews.swift in Sources */,
-				7131727322F9C47A00575BBF /* IntrinsicContentSize.swift in Sources */,
 				7131724822F9BF4700575BBF /* AppDelegate.swift in Sources */,
-				71D6E00F22F9C67200400984 /* StackViews.swift in Sources */,
 				7131726022F9C09000575BBF /* SafeAreaGuide.swift in Sources */,
-				7131725C22F9C05E00575BBF /* Anchors.swift in Sources */,
 				712F3A9522FDF59800345A0C /* LabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
