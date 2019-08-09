@@ -29,18 +29,13 @@ class RowView: UIView {
 
         titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-//        titleLabel.trailingAnchor.constraint(equalTo: onOffSwith.leadingAnchor, constant: -8).isActive = true
         
         onOffSwith.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         onOffSwith.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor).isActive = true
-        
-        // We could do this...but overriding intrinsicContentSize is better
-//        self.heightAnchor.constraint(equalToConstant: 31).isActive = true
     }
 
     override var intrinsicContentSize: CGSize {
         return CGSize(width: 200, height: 31)
-//        return CGSize(width: UIView.noIntrinsicMetric, height: 31)
     }
     
 }

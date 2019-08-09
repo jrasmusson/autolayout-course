@@ -29,7 +29,6 @@ class PaddingView: UIViewController {
             stackView.addArrangedSubview(row)
             
             // Note: We need to adjust our width to take into account the extra padding on the side (16x2 = 32)
-//            row.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
             row.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 1, constant: -32).isActive = true
         }
         
