@@ -93,6 +93,13 @@ func makeSwitch(isOn: Bool) -> UISwitch {
     return theSwitch
 }
 
+func makeScrollView() -> UIScrollView {
+    let scrollView = UIScrollView()
+    scrollView.translatesAutoresizingMaskIntoConstraints = false
+    
+    return scrollView
+}
+
 extension UIColor {
     static let darkBlue = UIColor(red: 10/255, green: 132/255, blue: 255/255, alpha: 1)
     static let darkGreen = UIColor(red: 48/255, green: 209/255, blue: 88/255, alpha: 1)
