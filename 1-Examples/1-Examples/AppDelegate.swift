@@ -32,14 +32,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "CHCR - Image", viewController: CHCRImage()),
         ]
 
+        
+        let distributionLabs = [
+            Lab(name: "Fill", viewController: Fill()),
+            Lab(name: "Fill Equally", viewController: FillEqually()),
+            Lab(name: "Equal Spacing", viewController: EqualSpacing()),
+            Lab(name: "Equal Centering", viewController: EqualCentering()),
+        ]
+        
+        let distributionViewController = LabViewController(labs: distributionLabs, navBarTitle: "Distributions")
+
+        
         let stackViewLabs = [
             Lab(name: "Simple", viewController: SimpleStackView()),
             Lab(name: "Custom View", viewController: CustomView()),
             Lab(name: "Scrollable", viewController: ScrollableView()),
             Lab(name: "Padding", viewController: PaddingView()),
             Lab(name: "Spacer", viewController: StackSpacerView()),
+            Lab(name: "Distributions", viewController: distributionViewController),
         ]
-        
+
         let anchorViewController = LabViewController(labs: anchorLabs, navBarTitle: "Anchors")
         let intrinsicViewController = LabViewController(labs: intrinsicLabs, navBarTitle: "Intrinsic Content Size")
         let stackViewController = LabViewController(labs: stackViewLabs, navBarTitle: "Stack Views")
