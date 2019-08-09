@@ -13,7 +13,9 @@ class StackViews: UITableViewController {
     let labs = [
         Lab(name: "Simple", viewController: SimpleStackView()),
         Lab(name: "Custom View", viewController: CustomView()),
-        Lab(name: "Scrollable", viewController: ScrollableView())
+        Lab(name: "Scrollable", viewController: ScrollableView()),
+        Lab(name: "Padding", viewController: PaddingView()),
+        Lab(name: "Spacer View", viewController: StackSpacerView()),
     ]
 
     let cellId = "cellId"
