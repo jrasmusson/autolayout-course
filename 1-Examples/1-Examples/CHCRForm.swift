@@ -16,6 +16,8 @@ class CHCRForm: UIViewController {
     }
 
     func setupViews() {
+        navigationItem.title = "CHCR - Form"
+        
         let nameLabel = makeLabel(withText: "Name")
         let textField = makeTextField(withPlaceHolderText: "Enter name here")
 

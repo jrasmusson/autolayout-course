@@ -16,7 +16,8 @@ class CustomView: UIViewController {
     }
     
     func setupViews() {
-
+        navigationItem.title = "Custom View"
+        
         let row = RowView()
         let stackView = makeStackView(withOrientation: .vertical)
 

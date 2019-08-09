@@ -16,6 +16,7 @@ class ScrollableView: UIViewController {
     }
     
     func setupViews() {
+        navigationItem.title = "Scrollable"
         
         let stackView = makeStackView(withOrientation: .vertical)
         let scrollView = makeScrollView()

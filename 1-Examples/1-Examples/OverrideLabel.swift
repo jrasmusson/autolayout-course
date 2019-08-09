@@ -16,6 +16,7 @@ class OverrideLabel: UIViewController {
     }
 
     func setupViews() {
+        navigationItem.title = "Override Label"
         let label1 = makeLabel(withText: "label1")
 
         view.addSubview(label1)

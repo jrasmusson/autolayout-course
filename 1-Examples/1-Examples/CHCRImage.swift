@@ -16,6 +16,8 @@ class CHCRImage: UIViewController {
     }
 
     func setupViews() {
+        navigationItem.title = "CHCR - Image"
+        
         let image = makeImageView(named: "rush")
         let label = makeLabel(withText: "Title")
         let button = makeButton(withText: "Get Started")

@@ -16,6 +16,7 @@ class PaddingView: UIViewController {
     }
     
     func setupViews() {
+        navigationItem.title = "Padding"
         
         let stackView = makeStackView(withOrientation: .vertical)
         let scrollView = makeScrollView()

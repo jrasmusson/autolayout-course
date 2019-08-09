@@ -16,7 +16,8 @@ class SimpleStackView: UIViewController {
     }
 
     func setupViews() {
-
+        navigationItem.title = "Simple"
+        
         let emailTextField = makeTextField(withPlaceholderText: "email address")
         let passwordTextField = makeTextField(withPlaceholderText: "password")
         let loginButton = makeButton(withText: "Login")

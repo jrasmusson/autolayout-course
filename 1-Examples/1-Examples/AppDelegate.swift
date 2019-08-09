@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "Custom View", viewController: CustomView()),
             Lab(name: "Scrollable", viewController: ScrollableView()),
             Lab(name: "Padding", viewController: PaddingView()),
-            Lab(name: "Spacer View", viewController: StackSpacerView()),
+            Lab(name: "Spacer", viewController: StackSpacerView()),
         ]
         
         let anchorViewController = LabViewController(labs: anchorLabs, navBarTitle: "Anchors")

@@ -16,6 +16,7 @@ class StackSpacerView: UIViewController {
     }
     
     func setupViews() {
+        navigationItem.title = "Spacer"
         
         let stackView = makeStackView(withOrientation: .vertical)
         let scrollView = makeScrollView()
