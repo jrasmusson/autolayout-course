@@ -10,6 +10,7 @@
 		712F3A8D22FDC28700345A0C /* ScrollableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712F3A8C22FDC28700345A0C /* ScrollableView.swift */; };
 		712F3A9022FDD8E300345A0C /* PaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712F3A8F22FDD8E300345A0C /* PaddingView.swift */; };
 		712F3A9322FDD99800345A0C /* StackSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712F3A9222FDD99800345A0C /* StackSpacerView.swift */; };
+		712F3A9522FDF59800345A0C /* LabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712F3A9422FDF59800345A0C /* LabViewController.swift */; };
 		7131724822F9BF4700575BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131724722F9BF4700575BBF /* AppDelegate.swift */; };
 		7131724A22F9BF4700575BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131724922F9BF4700575BBF /* ViewController.swift */; };
 		7131724F22F9BF4800575BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7131724E22F9BF4800575BBF /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		712F3A8C22FDC28700345A0C /* ScrollableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableView.swift; sourceTree = "<group>"; };
 		712F3A8F22FDD8E300345A0C /* PaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingView.swift; sourceTree = "<group>"; };
 		712F3A9222FDD99800345A0C /* StackSpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackSpacerView.swift; sourceTree = "<group>"; };
+		712F3A9422FDF59800345A0C /* LabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabViewController.swift; sourceTree = "<group>"; };
 		7131724422F9BF4700575BBF /* 1-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7131724722F9BF4700575BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7131724922F9BF4700575BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				71D6E00D22F9C63100400984 /* StackViews */,
 				7131724922F9BF4700575BBF /* ViewController.swift */,
 				7131726922F9C1E400575BBF /* Factories.swift */,
+				712F3A9422FDF59800345A0C /* LabViewController.swift */,
 			);
 			path = "1-Examples";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				71D6E00F22F9C67200400984 /* StackViews.swift in Sources */,
 				7131726022F9C09000575BBF /* SafeAreaGuide.swift in Sources */,
 				7131725C22F9C05E00575BBF /* Anchors.swift in Sources */,
+				712F3A9522FDF59800345A0C /* LabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
 
-        let navigatorController = UINavigationController(rootViewController: ViewController())
+        let labs = [
+            Lab(name: "Anchors", viewController: Anchors()),
+            Lab(name: "Intrinsic Content Size", viewController: IntrinsicContentSize()),
+            Lab(name: "Stack Views", viewController: StackViews()),
+        ]
+
+        let rootViewController = LabViewController(labs: labs, navBarTitle: "Examples")
+        let navigatorController = UINavigationController(rootViewController: rootViewController)
+        
         window?.rootViewController = navigatorController
 
         return true
