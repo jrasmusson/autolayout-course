@@ -9,10 +9,7 @@
 import UIKit
 
 class Challenge: UIViewController {
-    
-    let margin: CGFloat = 20
-    let spacing: CGFloat = 32
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
@@ -23,13 +20,31 @@ class Challenge: UIViewController {
         navigationItem.title = "Playback"
     }
     
-    func setupViews() {
+    func setupViews() {        
+        let stackView = makeStackView(withOrientation: .vertical)
 
-        // Comment in incrementally ...
-//        let offlineLabel = makeLabel(withText: "Offline")
-//        let offlineSwitch = makeSwitch(isOn: false)
-//        let offlineSublabel = makeSubLabel(withText: "When you go offline, you'll only be able to play the music and podcasts you've downloaded.")
-//
+        let offlineRow = RowView(title: "Offline", isOn: false)
+        let offlineSublabel = makeSubLabel(withText: "When you go offline, you'll only be able to play the music and podcasts you've downloaded.")
+        
+        stackView.addArrangedSubview(offlineRow)
+        stackView.addArrangedSubview(offlineSublabel)
+
+        view.addSubview(stackView)
+        
+        
+
+        
+        // Pinning to the sides of view
+        stackView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+
+        
+        // for padding and spacing
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
+        
+        
 //        let crossfadeLabel = makeBoldLabel(withText: "Crossfade")
 //        let crossfadeMinLabel = makeSubLabel(withText: "0s")
 //        let crossfadeMaxLabel = makeSubLabel(withText: "12s")
@@ -67,6 +82,14 @@ class Challenge: UIViewController {
     }
 }
 
-extension UIColor {
-    static let offBlack = UIColor(red: 25/255, green: 25/255, blue: 25/255, alpha: 1)
-}
+// Notes:
+//
+// 1. We don't need to pin stackview to the bottom (top, leading, trailing are enough)
+//        stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+//
+// 2. We don't need the width constraint we needed with the scrollview (margins respected)
+//        offlineRow.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 1, constant: -32).isActive = true
+//
+
+
+

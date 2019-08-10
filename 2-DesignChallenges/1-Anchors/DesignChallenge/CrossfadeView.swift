@@ -1,5 +1,5 @@
 //
-//  RowView.swift
+//  CrossfadeView.swift
 //  DesignChallenge
 //
 //  Created by Jonathan Rasmusson Work Pro on 2019-08-10.
@@ -45,3 +45,4 @@ class RowView: UIView {
     }
     
 }
+
