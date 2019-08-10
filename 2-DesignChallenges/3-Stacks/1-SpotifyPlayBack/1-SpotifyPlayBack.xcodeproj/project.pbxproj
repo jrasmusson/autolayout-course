@@ -7,27 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7101B59722E2255E005AC320 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101B59622E2255E005AC320 /* Challenge.swift */; };
-		71054F6A22DCC4C500BE45CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71054F6922DCC4C500BE45CF /* AppDelegate.swift */; };
-		71054F6C22DCC4C500BE45CF /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71054F6B22DCC4C500BE45CF /* Solution.swift */; };
-		71054F7122DCC4C600BE45CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71054F7022DCC4C600BE45CF /* Assets.xcassets */; };
-		71054F7422DCC4C600BE45CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71054F7222DCC4C600BE45CF /* LaunchScreen.storyboard */; };
-		71FFB13B22FEF6A9009BBF1A /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB13A22FEF6A9009BBF1A /* RowView.swift */; };
+		71FFB12622FE5949009BBF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB12522FE5949009BBF1A /* AppDelegate.swift */; };
+		71FFB12D22FE594B009BBF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FFB12C22FE594B009BBF1A /* Assets.xcassets */; };
+		71FFB13022FE594B009BBF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FFB12E22FE594B009BBF1A /* LaunchScreen.storyboard */; };
+		71FFB13922FE5A5C009BBF1A /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB13822FE5A5C009BBF1A /* Solution.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7101B59622E2255E005AC320 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
-		71054F6622DCC4C500BE45CF /* DesignChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		71054F6922DCC4C500BE45CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71054F6B22DCC4C500BE45CF /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
-		71054F7022DCC4C600BE45CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		71054F7322DCC4C600BE45CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		71054F7522DCC4C600BE45CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71FFB13A22FEF6A9009BBF1A /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		71FFB12222FE5949009BBF1A /* 1-SpotifyPlayBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1-SpotifyPlayBack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FFB12522FE5949009BBF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71FFB12C22FE594B009BBF1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71FFB12F22FE594B009BBF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71FFB13122FE594B009BBF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71FFB13822FE5A5C009BBF1A /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		71054F6322DCC4C500BE45CF /* Frameworks */ = {
+		71FFB11F22FE5949009BBF1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,80 +33,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7101B59522E224D5005AC320 /* Files */ = {
+		71FFB11922FE5949009BBF1A = {
 			isa = PBXGroup;
 			children = (
-				71054F7522DCC4C600BE45CF /* Info.plist */,
-				71054F7022DCC4C600BE45CF /* Assets.xcassets */,
-				71054F7222DCC4C600BE45CF /* LaunchScreen.storyboard */,
-			);
-			name = Files;
-			sourceTree = "<group>";
-		};
-		71054F5D22DCC4C500BE45CF = {
-			isa = PBXGroup;
-			children = (
-				71054F6822DCC4C500BE45CF /* DesignChallenge */,
-				71054F6722DCC4C500BE45CF /* Products */,
+				71FFB12422FE5949009BBF1A /* 1-SpotifyPlayBack */,
+				71FFB12322FE5949009BBF1A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		71054F6722DCC4C500BE45CF /* Products */ = {
+		71FFB12322FE5949009BBF1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71054F6622DCC4C500BE45CF /* DesignChallenge.app */,
+				71FFB12222FE5949009BBF1A /* 1-SpotifyPlayBack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		71054F6822DCC4C500BE45CF /* DesignChallenge */ = {
+		71FFB12422FE5949009BBF1A /* 1-SpotifyPlayBack */ = {
 			isa = PBXGroup;
 			children = (
-				7101B59522E224D5005AC320 /* Files */,
-				71054F6922DCC4C500BE45CF /* AppDelegate.swift */,
-				71054F6B22DCC4C500BE45CF /* Solution.swift */,
-				7101B59622E2255E005AC320 /* Challenge.swift */,
-				71FFB13A22FEF6A9009BBF1A /* RowView.swift */,
+				71FFB13722FE59F2009BBF1A /* Files */,
+				71FFB12522FE5949009BBF1A /* AppDelegate.swift */,
+				71FFB13822FE5A5C009BBF1A /* Solution.swift */,
 			);
-			path = DesignChallenge;
+			path = "1-SpotifyPlayBack";
+			sourceTree = "<group>";
+		};
+		71FFB13722FE59F2009BBF1A /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				71FFB13122FE594B009BBF1A /* Info.plist */,
+				71FFB12E22FE594B009BBF1A /* LaunchScreen.storyboard */,
+				71FFB12C22FE594B009BBF1A /* Assets.xcassets */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		71054F6522DCC4C500BE45CF /* DesignChallenge */ = {
+		71FFB12122FE5949009BBF1A /* 1-SpotifyPlayBack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71054F7822DCC4C600BE45CF /* Build configuration list for PBXNativeTarget "DesignChallenge" */;
+			buildConfigurationList = 71FFB13422FE594B009BBF1A /* Build configuration list for PBXNativeTarget "1-SpotifyPlayBack" */;
 			buildPhases = (
-				71054F6222DCC4C500BE45CF /* Sources */,
-				71054F6322DCC4C500BE45CF /* Frameworks */,
-				71054F6422DCC4C500BE45CF /* Resources */,
+				71FFB11E22FE5949009BBF1A /* Sources */,
+				71FFB11F22FE5949009BBF1A /* Frameworks */,
+				71FFB12022FE5949009BBF1A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DesignChallenge;
-			productName = DesignChallenge;
-			productReference = 71054F6622DCC4C500BE45CF /* DesignChallenge.app */;
+			name = "1-SpotifyPlayBack";
+			productName = "1-SpotifyPlayBack";
+			productReference = 71FFB12222FE5949009BBF1A /* 1-SpotifyPlayBack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		71054F5E22DCC4C500BE45CF /* Project object */ = {
+		71FFB11A22FE5949009BBF1A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "Jonathan Rasmusson";
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Rasmusson Software Consulting";
 				TargetAttributes = {
-					71054F6522DCC4C500BE45CF = {
-						CreatedOnToolsVersion = 10.2;
+					71FFB12122FE5949009BBF1A = {
+						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 71054F6122DCC4C500BE45CF /* Build configuration list for PBXProject "DesignChallenge" */;
+			buildConfigurationList = 71FFB11D22FE5949009BBF1A /* Build configuration list for PBXProject "1-SpotifyPlayBack" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,47 +112,45 @@
 				en,
 				Base,
 			);
-			mainGroup = 71054F5D22DCC4C500BE45CF;
-			productRefGroup = 71054F6722DCC4C500BE45CF /* Products */;
+			mainGroup = 71FFB11922FE5949009BBF1A;
+			productRefGroup = 71FFB12322FE5949009BBF1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				71054F6522DCC4C500BE45CF /* DesignChallenge */,
+				71FFB12122FE5949009BBF1A /* 1-SpotifyPlayBack */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		71054F6422DCC4C500BE45CF /* Resources */ = {
+		71FFB12022FE5949009BBF1A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71054F7422DCC4C600BE45CF /* LaunchScreen.storyboard in Resources */,
-				71054F7122DCC4C600BE45CF /* Assets.xcassets in Resources */,
+				71FFB13022FE594B009BBF1A /* LaunchScreen.storyboard in Resources */,
+				71FFB12D22FE594B009BBF1A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		71054F6222DCC4C500BE45CF /* Sources */ = {
+		71FFB11E22FE5949009BBF1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7101B59722E2255E005AC320 /* Challenge.swift in Sources */,
-				71054F6C22DCC4C500BE45CF /* Solution.swift in Sources */,
-				71054F6A22DCC4C500BE45CF /* AppDelegate.swift in Sources */,
-				71FFB13B22FEF6A9009BBF1A /* RowView.swift in Sources */,
+				71FFB13922FE5A5C009BBF1A /* Solution.swift in Sources */,
+				71FFB12622FE5949009BBF1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		71054F7222DCC4C600BE45CF /* LaunchScreen.storyboard */ = {
+		71FFB12E22FE594B009BBF1A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71054F7322DCC4C600BE45CF /* Base */,
+				71FFB12F22FE594B009BBF1A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +158,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		71054F7622DCC4C600BE45CF /* Debug */ = {
+		71FFB13222FE594B009BBF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -227,7 +219,7 @@
 			};
 			name = Debug;
 		};
-		71054F7722DCC4C600BE45CF /* Release */ = {
+		71FFB13322FE594B009BBF1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,34 +274,34 @@
 			};
 			name = Release;
 		};
-		71054F7922DCC4C600BE45CF /* Debug */ = {
+		71FFB13522FE594B009BBF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DesignChallenge/Info.plist;
+				INFOPLIST_FILE = "1-SpotifyPlayBack/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rsc.DesignChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rsc.--SpotifyPlayBack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		71054F7A22DCC4C600BE45CF /* Release */ = {
+		71FFB13622FE594B009BBF1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DesignChallenge/Info.plist;
+				INFOPLIST_FILE = "1-SpotifyPlayBack/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rsc.DesignChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rsc.--SpotifyPlayBack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,25 +311,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		71054F6122DCC4C500BE45CF /* Build configuration list for PBXProject "DesignChallenge" */ = {
+		71FFB11D22FE5949009BBF1A /* Build configuration list for PBXProject "1-SpotifyPlayBack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71054F7622DCC4C600BE45CF /* Debug */,
-				71054F7722DCC4C600BE45CF /* Release */,
+				71FFB13222FE594B009BBF1A /* Debug */,
+				71FFB13322FE594B009BBF1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71054F7822DCC4C600BE45CF /* Build configuration list for PBXNativeTarget "DesignChallenge" */ = {
+		71FFB13422FE594B009BBF1A /* Build configuration list for PBXNativeTarget "1-SpotifyPlayBack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71054F7922DCC4C600BE45CF /* Debug */,
-				71054F7A22DCC4C600BE45CF /* Release */,
+				71FFB13522FE594B009BBF1A /* Debug */,
+				71FFB13622FE594B009BBF1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 71054F5E22DCC4C500BE45CF /* Project object */;
+	rootObject = 71FFB11A22FE5949009BBF1A /* Project object */;
 }
