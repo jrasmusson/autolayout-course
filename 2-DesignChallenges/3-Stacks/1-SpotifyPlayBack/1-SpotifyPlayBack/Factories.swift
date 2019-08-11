@@ -1,9 +1,9 @@
 //
 //  Factories.swift
-//  DesignChallenge
+//  1-SpotifyPlayBack
 //
-//  Created by Jonathan Rasmusson Work Pro on 2019-08-10.
-//  Copyright © 2019 Jonathan Rasmusson. All rights reserved.
+//  Created by Jonathan Rasmusson Work Pro on 2019-08-11.
+//  Copyright © 2019 Rasmusson Software Consulting. All rights reserved.
 //
 
 import UIKit
@@ -73,12 +73,6 @@ public extension NSLayoutConstraint {
     }
 }
 
-extension UINavigationController {
-    override open var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-}
-
 extension UIColor {
     static let darkBlue = UIColor(red: 10/255, green: 132/255, blue: 255/255, alpha: 1)
     static let darkGreen = UIColor(red: 48/255, green: 209/255, blue: 88/255, alpha: 1)
@@ -87,4 +81,10 @@ extension UIColor {
     static let darkTeal = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
     static let darkYellow = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
     static let offBlack = UIColor(red: 25/255, green: 25/255, blue: 25/255, alpha: 1)
+}
+
+extension UINavigationController {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }

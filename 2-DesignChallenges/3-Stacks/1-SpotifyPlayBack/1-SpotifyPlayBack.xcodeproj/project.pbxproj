@@ -11,6 +11,9 @@
 		71FFB12D22FE594B009BBF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FFB12C22FE594B009BBF1A /* Assets.xcassets */; };
 		71FFB13022FE594B009BBF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FFB12E22FE594B009BBF1A /* LaunchScreen.storyboard */; };
 		71FFB13922FE5A5C009BBF1A /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB13822FE5A5C009BBF1A /* Solution.swift */; };
+		71FFB141230049E2009BBF1A /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB140230049E2009BBF1A /* RowView.swift */; };
+		71FFB143230049EF009BBF1A /* CrossfadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB142230049EF009BBF1A /* CrossfadeView.swift */; };
+		71FFB14523004A2D009BBF1A /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB14423004A2D009BBF1A /* Factories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		71FFB12F22FE594B009BBF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71FFB13122FE594B009BBF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71FFB13822FE5A5C009BBF1A /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		71FFB140230049E2009BBF1A /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		71FFB142230049EF009BBF1A /* CrossfadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadeView.swift; sourceTree = "<group>"; };
+		71FFB14423004A2D009BBF1A /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 				71FFB13722FE59F2009BBF1A /* Files */,
 				71FFB12522FE5949009BBF1A /* AppDelegate.swift */,
 				71FFB13822FE5A5C009BBF1A /* Solution.swift */,
+				71FFB140230049E2009BBF1A /* RowView.swift */,
+				71FFB142230049EF009BBF1A /* CrossfadeView.swift */,
+				71FFB14423004A2D009BBF1A /* Factories.swift */,
 			);
 			path = "1-SpotifyPlayBack";
 			sourceTree = "<group>";
@@ -140,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				71FFB13922FE5A5C009BBF1A /* Solution.swift in Sources */,
+				71FFB141230049E2009BBF1A /* RowView.swift in Sources */,
 				71FFB12622FE5949009BBF1A /* AppDelegate.swift in Sources */,
+				71FFB14523004A2D009BBF1A /* Factories.swift in Sources */,
+				71FFB143230049EF009BBF1A /* CrossfadeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
