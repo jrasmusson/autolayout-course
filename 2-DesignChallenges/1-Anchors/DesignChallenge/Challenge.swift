@@ -22,17 +22,26 @@ class Challenge: UIViewController {
     
     func setupViews() {        
         let stackView = makeStackView(withOrientation: .vertical)
+        stackView.spacing = 16
 
         let offlineRow = RowView(title: "Offline", isOn: false)
+        
         let offlineSublabel = makeSubLabel(withText: "When you go offline, you'll only be able to play the music and podcasts you've downloaded.")
+        
+        let crossfadeView = CrossfadeView()
+        
+        let gaplessRow = RowView(title: "Gapless Playback", isOn: true)
+        let hideSongsRow = RowView(title: "Hide Unplayable Songs", isOn: true)
+        let normalizationRow = RowView(title: "Enable Audio Normalization", isOn: true)
         
         stackView.addArrangedSubview(offlineRow)
         stackView.addArrangedSubview(offlineSublabel)
-
+        stackView.addArrangedSubview(crossfadeView)
+        stackView.addArrangedSubview(gaplessRow)
+        stackView.addArrangedSubview(hideSongsRow)
+        stackView.addArrangedSubview(normalizationRow)
+        
         view.addSubview(stackView)
-        
-        
-
         
         // Pinning to the sides of view
         stackView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -43,42 +52,6 @@ class Challenge: UIViewController {
         // for padding and spacing
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
-        
-        
-//        let crossfadeLabel = makeBoldLabel(withText: "Crossfade")
-//        let crossfadeMinLabel = makeSubLabel(withText: "0s")
-//        let crossfadeMaxLabel = makeSubLabel(withText: "12s")
-//        let crossfadeProgressView = makeProgressView()
-//
-//        let gaplessPlaybackLabel = makeLabel(withText: "Gapless Playback")
-//        let gaplessPlaybackSwitch = makeSwitch(isOn: true)
-//
-//        let hideSongsLabel = makeLabel(withText: "Hide Unplayable Songs")
-//        let hideSongsSwitch = makeSwitch(isOn: true)
-//
-//        let enableNormalizationLabel = makeLabel(withText: "Enable Audio Normalization")
-//        let enableNormalizationSwitch = makeSwitch(isOn: true)
-//
-//        view.addSubview(offlineLabel)
-//        view.addSubview(offlineSwitch)
-//        view.addSubview(offlineSublabel)
-//
-//        view.addSubview(crossfadeLabel)
-//        view.addSubview(crossfadeMinLabel)
-//        view.addSubview(crossfadeProgressView)
-//        view.addSubview(crossfadeMaxLabel)
-//
-//        view.addSubview(gaplessPlaybackLabel)
-//        view.addSubview(gaplessPlaybackSwitch)
-//
-//        view.addSubview(hideSongsLabel)
-//        view.addSubview(hideSongsSwitch)
-//
-//        view.addSubview(enableNormalizationLabel)
-//        view.addSubview(enableNormalizationSwitch)
-
-        // Start your layout here...
-
     }
 }
 
@@ -90,6 +63,5 @@ class Challenge: UIViewController {
 // 2. We don't need the width constraint we needed with the scrollview (margins respected)
 //        offlineRow.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 1, constant: -32).isActive = true
 //
-
-
-
+// 3. Reduced number of constraints by two thrirds (30 to 12).
+//

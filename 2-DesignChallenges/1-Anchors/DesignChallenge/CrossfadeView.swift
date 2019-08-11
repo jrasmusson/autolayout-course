@@ -8,17 +8,10 @@
 
 import UIKit
 
-class RowView: UIView {
+class CrossfadeView: UIView {
     
-    var title: String
-    var isOn: Bool
-    
-    init(title: String, isOn: Bool) {
-        self.title = title
-        self.isOn = isOn
-        
+    init() {
         super.init(frame: .zero)
-        
         setupViews()
     }
     
@@ -27,22 +20,36 @@ class RowView: UIView {
     }
     
     func setupViews() {
-        let titleLabel = makeLabel(withText: title)
-        let onOffSwith = makeSwitch(isOn: isOn)
+        let crossfadeLabel = makeBoldLabel(withText: "Crossfade")
+        let crossfadeMinLabel = makeSubLabel(withText: "0s")
+        let crossfadeMaxLabel = makeSubLabel(withText: "12s")
+        let crossfadeProgressView = makeProgressView()
+
+        addSubview(crossfadeLabel)
+        addSubview(crossfadeMinLabel)
+        addSubview(crossfadeMaxLabel)
+        addSubview(crossfadeProgressView)
         
-        addSubview(titleLabel)
-        addSubview(onOffSwith)
+        crossfadeLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32 - 8).isActive = true
+        crossfadeLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
-        titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        crossfadeMinLabel.topAnchor.constraint(equalTo: crossfadeLabel.bottomAnchor, constant: 32).isActive = true
+        crossfadeMinLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         
-        onOffSwith.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        onOffSwith.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor).isActive = true
+        crossfadeProgressView.centerYAnchor.constraint(equalTo: crossfadeMinLabel.centerYAnchor).isActive = true
+        crossfadeProgressView.leadingAnchor.constraint(equalTo: crossfadeMinLabel.trailingAnchor, constant: 4).isActive = true
+        crossfadeProgressView.trailingAnchor.constraint(equalTo: crossfadeMaxLabel.leadingAnchor, constant: -4).isActive = true
+        
+        crossfadeMaxLabel.centerYAnchor.constraint(equalTo: crossfadeMinLabel.centerYAnchor).isActive = true
+        crossfadeMaxLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
     
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: 200, height: 31)
+        return CGSize(width: 300, height: 100)
     }
     
 }
 
+// Note:
+//
+// 1. I did add some padding to the top of the view (not completely flush)
