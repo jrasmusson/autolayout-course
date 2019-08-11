@@ -10,70 +10,41 @@ import UIKit
 
 class Solution: UIViewController {
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
     }
     
     func setupViews() {
+        
+        // top
+        let topStackView = makeStackView(withOrientation: .vertical)
         let albumImage = makeImageView(named: "rush")
+        topStackView.addArrangedSubview(albumImage)
+        
+        // bottom
+        let bottomStackView = makeStackView(withOrientation: .vertical)
+        bottomStackView.distribution = .fillProportionally
         let trackLabel = makeTrackLabel(withText: "Tom Sawyer")
         let albumLabel = makeAlbumLabel(withText: "Rush • Moving Pictures (2011 Remaster)")
-        
-        let playButton = makePlayButton()
-        let previewStartLabel = makePreviewLabel(withText: "0:00")
-        let previewEndLabel = makePreviewLabel(withText: "0:30")
-        let progressView = makeProgressView()
-        
+        let playerView = PlayerView()
         let spotifyButton = makeSpotifyButton(withText: "PLAY ON SPOTIFY")
         
-        view.addSubview(albumImage)
-        view.addSubview(trackLabel)
-        view.addSubview(albumLabel)
+        bottomStackView.addArrangedSubview(trackLabel)
+        bottomStackView.addArrangedSubview(albumLabel)
+        bottomStackView.addArrangedSubview(playerView)
+        bottomStackView.addArrangedSubview(spotifyButton)
         
-        view.addSubview(playButton)
-        view.addSubview(previewStartLabel)
-        view.addSubview(progressView)
-        view.addSubview(previewEndLabel)
+        // container
+        let containerStackView = makeStackView(withOrientation: .vertical)
+        containerStackView.addArrangedSubview(topStackView)
+        containerStackView.addArrangedSubview(bottomStackView)
         
-        view.addSubview(spotifyButton)
+        view.addSubview(containerStackView)
         
-        albumImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        albumImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        albumImage.heightAnchor.constraint(equalTo: albumImage.widthAnchor, multiplier: 1).isActive = true
-        albumImage.widthAnchor.constraint(equalToConstant: view.bounds.width).isActive = true
-        
-        trackLabel.topAnchor.constraint(equalTo: albumImage.bottomAnchor, constant: 8).isActive = true
-        trackLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
-        trackLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
-        
-        albumLabel.topAnchor.constraint(equalTo: trackLabel.bottomAnchor, constant: 8).isActive = true
-        albumLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
-        albumLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
-        
-        playButton.topAnchor.constraint(equalTo: albumLabel.bottomAnchor, constant: 8).isActive = true
-        playButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
-        playButton.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
-        playButton.widthAnchor.constraint(equalToConstant: buttonHeight).isActive = true
-        
-        previewStartLabel.centerYAnchor.constraint(equalTo: playButton.centerYAnchor).isActive = true
-        previewStartLabel.leadingAnchor.constraint(equalTo: playButton.trailingAnchor, constant: 8).isActive = true
-        
-        progressView.centerYAnchor.constraint(equalTo: playButton.centerYAnchor).isActive = true
-        progressView.leadingAnchor.constraint(equalTo: previewStartLabel.trailingAnchor, constant: 8).isActive = true
-        
-        previewEndLabel.centerYAnchor.constraint(equalTo: playButton.centerYAnchor).isActive = true
-        previewEndLabel.leadingAnchor.constraint(equalTo: progressView.trailingAnchor, constant: 8).isActive = true
-        previewEndLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
-        
-        spotifyButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        spotifyButton.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 32).isActive = true
-        spotifyButton.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
-        
-        // spotifyButton.heightAnchor we need to set to get our nice rounded corners - height is fixed
-        // spotifyButton.widthAnchor we don't need to set because the intrinsic content size and insets are enough - width is dynamic
+        containerStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        containerStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        containerStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
     
 
