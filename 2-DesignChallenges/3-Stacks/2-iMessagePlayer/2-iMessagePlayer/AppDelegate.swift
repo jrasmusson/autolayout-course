@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  DesignChallenge
+//  2-iMessagePlayer
 //
-//  Created by Jonathan Rasmusson Work Pro on 2019-07-22.
+//  Created by Jonathan Rasmusson Work Pro on 2019-08-11.
 //  Copyright © 2019 Rasmusson Software Consulting. All rights reserved.
 //
 
@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
-
-//        let navigatorController = UINavigationController(rootViewController: Challenge())
+        
+        //        let navigatorController = UINavigationController(rootViewController: Challenge())
         let navigatorController = UINavigationController(rootViewController: Solution())
         window?.rootViewController = navigatorController
         
