@@ -50,7 +50,7 @@ class Solution: UIViewController {
     }
     
     //
-    // Notes:
+    // Factory methods
     //
     
     func makeAlbumImageView() -> UIImageView {
@@ -69,6 +69,7 @@ class Solution: UIViewController {
         return bottomStackView
     }
     
+    //
     // Spotify button width
     //
     //    Getting the Spotify button, not spreading across the entire width of the phone is a challenge.
