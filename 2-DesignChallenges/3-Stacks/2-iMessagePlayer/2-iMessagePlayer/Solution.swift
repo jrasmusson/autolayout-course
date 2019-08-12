@@ -19,21 +19,18 @@ class Solution: UIViewController {
         
         // top
         let topStackView = makeStackView(withOrientation: .vertical)
-        let albumImage = makeImageView(named: "rush")
+        let albumImage = makeAlbumImageView()
+
         topStackView.addArrangedSubview(albumImage)
         
         // bottom
-        let bottomStackView = makeStackView(withOrientation: .vertical)
-        bottomStackView.isLayoutMarginsRelativeArrangement = true
-        bottomStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
+        let bottomStackView = makeBottomStackView()
 
         let trackLabel = makeTrackLabel(withText: "Tom Sawyer")
         let albumLabel = makeAlbumLabel(withText: "Rush • Moving Pictures (2011 Remaster)")
         let playerView = PlayerView()
-        
-        // Two different ways we can layout the button - see notes below
         let spotifyButtonView = makeSpotifyButtonStackView()
-//        let spotifyButtonView = makeSpotifyButtonCustomView()
+        // let spotifyButtonView = makeSpotifyButtonCustomView() // Alternative
         
         bottomStackView.addArrangedSubview(trackLabel)
         bottomStackView.addArrangedSubview(albumLabel)
@@ -52,8 +49,26 @@ class Solution: UIViewController {
         containerStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
     
+    //
     // Notes:
     //
+    
+    func makeAlbumImageView() -> UIImageView {
+        let albumImage = makeImageView(named: "rush")
+        albumImage.heightAnchor.constraint(equalTo: albumImage.widthAnchor, multiplier: 1).isActive = true
+        albumImage.widthAnchor.constraint(equalToConstant: view.bounds.width).isActive = true
+
+        return albumImage
+    }
+    
+    func makeBottomStackView() -> UIStackView {
+        let bottomStackView = makeStackView(withOrientation: .vertical)
+        bottomStackView.isLayoutMarginsRelativeArrangement = true
+        bottomStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
+
+        return bottomStackView
+    }
+    
     // Spotify button width
     //
     //    Getting the Spotify button, not spreading across the entire width of the phone is a challenge.
