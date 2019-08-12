@@ -24,16 +24,23 @@ class Solution: UIViewController {
         
         // bottom
         let bottomStackView = makeStackView(withOrientation: .vertical)
-        bottomStackView.distribution = .fillProportionally
+        bottomStackView.isLayoutMarginsRelativeArrangement = true
+        bottomStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
+
         let trackLabel = makeTrackLabel(withText: "Tom Sawyer")
         let albumLabel = makeAlbumLabel(withText: "Rush • Moving Pictures (2011 Remaster)")
         let playerView = PlayerView()
         let spotifyButton = makeSpotifyButton(withText: "PLAY ON SPOTIFY")
-        
+        let spotifyButtonStackView = makeStackView(withOrientation: .vertical)
+        spotifyButtonStackView.isLayoutMarginsRelativeArrangement = true
+        spotifyButtonStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 40, bottom: 0, trailing: 40)
+
+        spotifyButtonStackView.addArrangedSubview(spotifyButton)
+
         bottomStackView.addArrangedSubview(trackLabel)
         bottomStackView.addArrangedSubview(albumLabel)
         bottomStackView.addArrangedSubview(playerView)
-        bottomStackView.addArrangedSubview(spotifyButton)
+        bottomStackView.addArrangedSubview(spotifyButtonStackView)
         
         // container
         let containerStackView = makeStackView(withOrientation: .vertical)
@@ -45,8 +52,28 @@ class Solution: UIViewController {
         containerStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         containerStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         containerStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        
+        // tweaks
+//        spotifyButton.widthAnchor.constraint(equalTo: containerStackView.widthAnchor, multiplier: 1).isActive = true
+        spotifyButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
     }
-    
-
 }
+
+// Notes:
+//
+// Spotify button width
+//
+//    Getting the Spotify button, not spreading across the entire width of the phone is a challenge.
+//    There are two ways we can tackle this.
+//
+//    1. We can stick the button in another stackView and give it padding via it's margins.
+//
+//      let spotifyButton = makeSpotifyButton(withText: "PLAY ON SPOTIFY")
+//      let spotifyButtonStackView = makeStackView(withOrientation: .vertical)
+//      spotifyButtonStackView.isLayoutMarginsRelativeArrangement = true
+//      spotifyButtonStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 40, bottom: 0, trailing: 40)
+//
+//      bottomStackView.addArrangedSubview(spotifyButtonStackView)
+//
+//    2. Create a custom view, layout the button in there, and then add it to the stackView.
 

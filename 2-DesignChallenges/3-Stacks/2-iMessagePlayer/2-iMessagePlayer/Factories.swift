@@ -89,7 +89,7 @@ func makeSpotifyButton(withText title: String) -> UIButton {
         NSAttributedString.Key.kern: 1
         ])
     
-    button.setAttributedTitle(attributedText, for: .normal) // Note how not button.setTitle()
+    button.setAttributedTitle(attributedText, for: .normal)
     
     return button
 }
