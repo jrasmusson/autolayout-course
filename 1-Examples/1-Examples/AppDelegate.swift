@@ -51,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "Padding", viewController: PaddingView()),
             Lab(name: "Spacer", viewController: StackSpacerView()),
             Lab(name: "Distributions", viewController: distributionViewController),
+            Lab(name: "Orientation", viewController: OrientationView()),
         ]
 
         let anchorViewController = LabViewController(labs: anchorLabs, navBarTitle: "Anchors")
