@@ -84,10 +84,10 @@ func makeStackView(withOrientation axis: NSLayoutConstraint.Axis) -> UIStackView
     return stackView
 }
 
-func makeView() -> UIView {
+func makeView(color: UIColor = .red) -> UIView {
     let view = UIView()
     view.translatesAutoresizingMaskIntoConstraints = false
-    view.backgroundColor = .red
+    view.backgroundColor = color
 
     return view
 }

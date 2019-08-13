@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		710EB6BB2302EF6A00404F03 /* OrientationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710EB6BA2302EF6A00404F03 /* OrientationView.swift */; };
+		710EB6BE2302FECE00404F03 /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710EB6BD2302FECE00404F03 /* RedView.swift */; };
+		710EB6C02302FF1E00404F03 /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710EB6BF2302FF1E00404F03 /* BlueView.swift */; };
 		712F3A8D22FDC28700345A0C /* ScrollableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712F3A8C22FDC28700345A0C /* ScrollableView.swift */; };
 		712F3A9022FDD8E300345A0C /* PaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712F3A8F22FDD8E300345A0C /* PaddingView.swift */; };
 		712F3A9322FDD99800345A0C /* StackSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712F3A9222FDD99800345A0C /* StackSpacerView.swift */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		710EB6BA2302EF6A00404F03 /* OrientationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationView.swift; sourceTree = "<group>"; };
+		710EB6BD2302FECE00404F03 /* RedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
+		710EB6BF2302FF1E00404F03 /* BlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
 		712F3A8C22FDC28700345A0C /* ScrollableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableView.swift; sourceTree = "<group>"; };
 		712F3A8F22FDD8E300345A0C /* PaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingView.swift; sourceTree = "<group>"; };
 		712F3A9222FDD99800345A0C /* StackSpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackSpacerView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710EB6BC2302FE9D00404F03 /* Orientations */ = {
+			isa = PBXGroup;
+			children = (
+				710EB6BA2302EF6A00404F03 /* OrientationView.swift */,
+				710EB6BD2302FECE00404F03 /* RedView.swift */,
+				710EB6BF2302FF1E00404F03 /* BlueView.swift */,
+			);
+			name = Orientations;
+			sourceTree = "<group>";
+		};
 		712F3A9622FDFD7700345A0C /* Distributions */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +173,7 @@
 				712F3A8C22FDC28700345A0C /* ScrollableView.swift */,
 				712F3A8F22FDD8E300345A0C /* PaddingView.swift */,
 				712F3A9222FDD99800345A0C /* StackSpacerView.swift */,
-				710EB6BA2302EF6A00404F03 /* OrientationView.swift */,
+				710EB6BC2302FE9D00404F03 /* Orientations */,
 			);
 			name = StackViews;
 			sourceTree = "<group>";
@@ -248,6 +262,7 @@
 				7131726222F9C09D00575BBF /* LayoutMargins.swift in Sources */,
 				71D6E01122F9C6BF00400984 /* SimpleStackView.swift in Sources */,
 				7131726F22F9C45900575BBF /* CHCRForm.swift in Sources */,
+				710EB6BE2302FECE00404F03 /* RedView.swift in Sources */,
 				7131726822F9C0C600575BBF /* ReadableContentGuides.swift in Sources */,
 				712F3AA222FE030300345A0C /* CHCRFill.swift in Sources */,
 				7185E0A322FB154200DFC3DE /* RowView.swift in Sources */,
@@ -257,6 +272,7 @@
 				7131726022F9C09000575BBF /* SafeAreaGuide.swift in Sources */,
 				712F3A9822FDFD8E00345A0C /* Fill.swift in Sources */,
 				712F3A9522FDF59800345A0C /* LabViewController.swift in Sources */,
+				710EB6C02302FF1E00404F03 /* BlueView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,19 +36,19 @@ class OrientationView: UIViewController {
     
     func setupViews() {
         navigationItem.title = "Orientations"
+
+        let redView = RedView()
+        let blueView = BlueView()
         
-        let emailTextField = makeTextField(withPlaceholderText: "email address")
-        let passwordTextField = makeTextField(withPlaceholderText: "password")
-        let loginButton = makeButton(withText: "Login")
-        
-        stackView.addArrangedSubview(emailTextField)
-        stackView.addArrangedSubview(passwordTextField)
-        stackView.addArrangedSubview(loginButton)
+        stackView.addArrangedSubview(redView)
+        stackView.addArrangedSubview(blueView)
         
         view.addSubview(stackView)
         
-        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
     
     @objc func rotated() {
