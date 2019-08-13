@@ -64,17 +64,5 @@ class OrientationView: UIViewController {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-    
-//    - (void)orientationChanged:(BOOL)isPortrait
-//    {
-//    if (isPortrait) {
-//    self.stackView.axis = UILayoutConstraintAxisVertical;
-//    [self.innerView adjustForPortrait];
-//    } else {
-//    self.stackView.axis = UILayoutConstraintAxisHorizontal;
-//    [self.innerView adjustForLandscape];
-//    }
-//    }
-
 }
 
