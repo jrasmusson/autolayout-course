@@ -21,6 +21,7 @@ class PlayerView: UIView {
     
     func setupViews() {
         let stackView = makeStackView(withOrientation: .vertical)
+        stackView.distribution = .fillProportionally
         
         let trackLabel = makeTrackLabel(withText: "Tom Sawyer")
         let albumLabel = makeAlbumLabel(withText: "Rush • Moving Pictures (2011 Remaster)")
