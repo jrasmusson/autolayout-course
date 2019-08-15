@@ -22,8 +22,6 @@ class OrientationView: UIViewController {
     }
     
     override func viewDidLoad() {
-
-        
         super.viewDidLoad()
         
         registerForOrientationChanges()
