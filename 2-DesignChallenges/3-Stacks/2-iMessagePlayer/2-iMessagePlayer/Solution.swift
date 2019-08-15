@@ -11,9 +11,12 @@ import UIKit
 class Solution: UIViewController {
     
     var containerStackView: UIStackView
+    var playerView: PlayerView
     
     init() {
         containerStackView = makeStackView(withOrientation: .vertical)
+        playerView = PlayerView()
+        
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -78,6 +81,9 @@ class Solution: UIViewController {
     // MARK: - Rotation
     
     @objc func rotated() {
+        playerView.adjustForOrientiation()
+        view.setNeedsLayout()
+        
         if UIDevice.current.orientation.isLandscape {
             print("Landscape")
             containerStackView.axis = .horizontal

@@ -105,6 +105,22 @@ func makeStackView(withOrientation axis: NSLayoutConstraint.Axis) -> UIStackView
     return stackView
 }
 
+public func makeSpacerView(height: CGFloat? = nil) -> UIView {
+    let spacerView = UIView(frame: .zero)
+    if let height = height {
+        spacerView.heightAnchor.constraint(equalToConstant: height).setActiveBreakable()
+    }
+    spacerView.translatesAutoresizingMaskIntoConstraints = false
+    return spacerView
+}
+
+public extension NSLayoutConstraint {
+    @objc func setActiveBreakable(priority: UILayoutPriority = UILayoutPriority(900)) {
+        self.priority = priority
+        isActive = true
+    }
+}
+
 extension UIColor {
     static let darkBlue = UIColor(red: 10/255, green: 132/255, blue: 255/255, alpha: 1)
     static let darkGreen = UIColor(red: 48/255, green: 209/255, blue: 88/255, alpha: 1)

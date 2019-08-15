@@ -10,7 +10,15 @@ import UIKit
 
 class PlayerView: UIView {
     
+    var spacer1: UIView
+    var spacer2: UIView
+
     init() {
+        spacer1 = makeSpacerView(height: 100)
+        spacer1.backgroundColor = .red
+        spacer2 = makeSpacerView(height: 100)
+        spacer2.backgroundColor = .blue
+
         super.init(frame: .zero)
         setupViews()
     }
@@ -31,10 +39,17 @@ class PlayerView: UIView {
         
         addSubview(stackView)
         
+        stackView.addArrangedSubview(spacer1)
         stackView.addArrangedSubview(trackLabel)
         stackView.addArrangedSubview(albumLabel)
         stackView.addArrangedSubview(playerView)
         stackView.addArrangedSubview(spotifyButtonView)
+        stackView.addArrangedSubview(spacer2)
+        
+        spacer1.heightAnchor.constraint(equalTo: spacer2.heightAnchor).isActive = true
+        
+        spacer1.isHidden = true
+        spacer2.isHidden = true
 
         stackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         stackView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
@@ -81,6 +96,16 @@ class PlayerView: UIView {
 
     override var intrinsicContentSize: CGSize {
         return CGSize(width: UIView.noIntrinsicMetric, height: 200)
+    }
+    
+    func adjustForOrientiation() {
+        if UIDevice.current.orientation.isLandscape {
+            spacer1.isHidden = false
+            spacer2.isHidden = false
+        } else {
+            spacer1.isHidden = true
+            spacer2.isHidden = true
+        }
     }
 }
 
