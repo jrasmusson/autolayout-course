@@ -10,17 +10,18 @@ import UIKit
 
 class PlayerView: UIView {
     
-    var spacer1: UIView
-    var spacer2: UIView
+    var stackView: UIStackView
+    var topAnchorConstraint = NSLayoutConstraint()
+    var centerYConstraint = NSLayoutConstraint()
 
     init() {
-        spacer1 = makeSpacerView(height: 100)
-        spacer1.backgroundColor = .red
-        spacer2 = makeSpacerView(height: 100)
-        spacer2.backgroundColor = .blue
-
+        stackView = makeStackView(withOrientation: .vertical)
+        stackView.distribution = .fillProportionally
+        
         super.init(frame: .zero)
+        
         setupViews()
+        setupOrientationConstraints()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -28,33 +29,35 @@ class PlayerView: UIView {
     }
     
     func setupViews() {
-        let stackView = makeStackView(withOrientation: .vertical)
-        stackView.distribution = .fillProportionally
-        
         let trackLabel = makeTrackLabel(withText: "Tom Sawyer")
         let albumLabel = makeAlbumLabel(withText: "Rush • Moving Pictures (2011 Remaster)")
         let playerView = ProgressRow()
-        let spotifyButtonView = makeSpotifyButtonStackView()
-        // let spotifyButtonView = makeSpotifyButtonCustomView() // Alternative
+        let spotifyButtonView = makeSpotifyButtonStackView() // or makeSpotifyButtonCustomView()
         
         addSubview(stackView)
         
-        stackView.addArrangedSubview(spacer1)
         stackView.addArrangedSubview(trackLabel)
         stackView.addArrangedSubview(albumLabel)
         stackView.addArrangedSubview(playerView)
         stackView.addArrangedSubview(spotifyButtonView)
-        stackView.addArrangedSubview(spacer2)
         
-        spacer1.heightAnchor.constraint(equalTo: spacer2.heightAnchor).isActive = true
-        
-        spacer1.isHidden = true
-        spacer2.isHidden = true
-
-        stackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        // topAnchor is dynamic - see below
         stackView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+    }
+    
+    func setupOrientationConstraints() {
+        topAnchorConstraint = stackView.topAnchor.constraint(equalTo: topAnchor)
+        centerYConstraint = stackView.centerYAnchor.constraint(equalTo: centerYAnchor)
+        
+        if UIDevice.current.orientation.isPortrait {
+            topAnchorConstraint.isActive = true
+            centerYConstraint.isActive = false
+        } else {
+            topAnchorConstraint.isActive = false
+            centerYConstraint.isActive = true
+        }
     }
     
     //
@@ -100,17 +103,11 @@ class PlayerView: UIView {
     
     func adjustForOrientiation() {
         if UIDevice.current.orientation.isLandscape {
-            spacer1.isHidden = false
-            spacer2.isHidden = false
+            topAnchorConstraint.isActive = false
+            centerYConstraint.isActive = true
         } else {
-            spacer1.isHidden = true
-            spacer2.isHidden = true
+            topAnchorConstraint.isActive = true
+            centerYConstraint.isActive = false
         }
     }
 }
-
-// Notes:
-//
-// 1. This stack is .fillProportionally
-// 2. The stackView is pinned to the exterior view.
-// 3. Two options for the Spotify button.

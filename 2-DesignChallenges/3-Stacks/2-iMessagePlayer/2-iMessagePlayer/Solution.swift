@@ -82,7 +82,6 @@ class Solution: UIViewController {
     
     @objc func rotated() {
         playerView.adjustForOrientiation()
-        view.setNeedsLayout()
         
         if UIDevice.current.orientation.isLandscape {
             print("Landscape")
