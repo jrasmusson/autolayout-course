@@ -10,24 +10,18 @@ import UIKit
 
 class PlayerView: UIView {
     
-//    var stackView: UIStackView
-//    var topAnchorConstraint = NSLayoutConstraint()
-//    var bottomAnchorConstraint = NSLayoutConstraint()
-//    var centerYConstraint = NSLayoutConstraint()
-
-    var spacer1: UIView
-    var spacer2: UIView
+    var topSpacer: UIView
+    var bottomSpacer: UIView
 
     init() {
-        spacer1 = makeSpacerView(height: 100)
-        spacer1.backgroundColor = .red
-        spacer2 = makeSpacerView(height: 100)
-        spacer2.backgroundColor = .blue
+        topSpacer = makeSpacerView(height: 100)
+//        topSpacer.backgroundColor = .red
+        bottomSpacer = makeSpacerView(height: 100)
+//        bottomSpacer.backgroundColor = .blue
         
         super.init(frame: .zero)
         
         setupViews()
-//        setupOrientationConstraints()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -46,41 +40,21 @@ class PlayerView: UIView {
 
         addSubview(stackView)
         
-        stackView.addArrangedSubview(spacer1)
+        stackView.addArrangedSubview(topSpacer)
         stackView.addArrangedSubview(trackLabel)
         stackView.addArrangedSubview(albumLabel)
         stackView.addArrangedSubview(playerView)
         stackView.addArrangedSubview(spotifyButtonView)
-        stackView.addArrangedSubview(spacer2)
+        stackView.addArrangedSubview(bottomSpacer)
         
-        spacer1.heightAnchor.constraint(equalTo: spacer2.heightAnchor).isActive = true
+        topSpacer.heightAnchor.constraint(equalTo: bottomSpacer.heightAnchor).isActive = true
 
         stackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         stackView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
-    
-    //
-    // When the orientation changes, we want to turn off the top & bottom constraints
-    // and center the playerView on the y-axis.
-    //
-//    func setupOrientationConstraints() {
-//        topAnchorConstraint = stackView.topAnchor.constraint(equalTo: topAnchor)
-//        bottomAnchorConstraint = stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
-//        centerYConstraint = stackView.centerYAnchor.constraint(equalTo: centerYAnchor)
-//
-//        if UIDevice.current.orientation.isPortrait {
-//            topAnchorConstraint.isActive = true
-//            bottomAnchorConstraint.isActive = true
-//            centerYConstraint.isActive = false
-//        } else {
-//            topAnchorConstraint.isActive = false
-//            bottomAnchorConstraint.isActive = false
-//            centerYConstraint.isActive = true
-//        }
-//    }
-    
+
     //
     // This customView centers the button and allows it to size itself.
     //
@@ -105,11 +79,11 @@ class PlayerView: UIView {
     
     func adjustForOrientiation() {
         if UIDevice.current.orientation.isLandscape {
-            spacer1.isHidden = false
-            spacer2.isHidden = false
+            topSpacer.isHidden = false
+            bottomSpacer.isHidden = false
         } else {
-            spacer1.isHidden = true
-            spacer2.isHidden = true
+            topSpacer.isHidden = true
+            bottomSpacer.isHidden = true
         }
     }
 }
