@@ -39,7 +39,7 @@ class Solution: UIViewController {
 
     func setupViews() {
         stackView.addArrangedSubview(makeAlbumImageView())
-        stackView.addArrangedSubview(playerView)
+        stackView.addArrangedSubview(makePlayerStackView())
         
         view.addSubview(stackView)
         
@@ -60,10 +60,12 @@ class Solution: UIViewController {
         return albumImage
     }
     
-    func makeBottomStackView() -> UIStackView {
+    func makePlayerStackView() -> UIStackView {
         let stackView = makeStackView(withOrientation: .vertical)
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
+        
+        stackView.addArrangedSubview(playerView)
         
         return stackView
     }
@@ -80,8 +82,8 @@ class Solution: UIViewController {
             stackView.axis = .vertical
             bottomAnchorConstraint.isActive = false
         }
+        
         playerView.adjustForOrientiation()
-
     }
     
     deinit {
@@ -89,3 +91,8 @@ class Solution: UIViewController {
     }
 
 }
+
+// Notes:
+//
+// 1. bottomAnchorConstraint needed for landscape
+// 2. playerStackView spacing done via layout margins
