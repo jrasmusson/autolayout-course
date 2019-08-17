@@ -10,11 +10,11 @@ import UIKit
 
 class Solution: UIViewController {
     
-    var containerStackView: UIStackView
+    var stackView: UIStackView
     var playerView: PlayerView
     
     init() {
-        containerStackView = makeStackView(withOrientation: .vertical)
+        stackView = makeStackView(withOrientation: .vertical)
         playerView = PlayerView()
         
         super.init(nibName: nil, bundle: nil)
@@ -36,26 +36,14 @@ class Solution: UIViewController {
     }
 
     func setupViews() {
+        stackView.addArrangedSubview(makeAlbumImageView())
+        stackView.addArrangedSubview(playerView)
         
-        // top
-        let topStackView = makeStackView(withOrientation: .vertical)
-        let albumImage = makeAlbumImageView()
-
-        topStackView.addArrangedSubview(albumImage)
+        view.addSubview(stackView)
         
-        // bottom
-        let bottomStackView = makeBottomStackView()
-        bottomStackView.addArrangedSubview(playerView)
-        
-        // container
-        containerStackView.addArrangedSubview(topStackView)
-        containerStackView.addArrangedSubview(bottomStackView)
-        
-        view.addSubview(containerStackView)
-        
-        containerStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        containerStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        containerStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
     
     // MARK: - Factory methods
@@ -63,7 +51,6 @@ class Solution: UIViewController {
     func makeAlbumImageView() -> UIImageView {
         let albumImage = makeImageView(named: "rush")
         albumImage.heightAnchor.constraint(equalTo: albumImage.widthAnchor, multiplier: 1).isActive = true
-        albumImage.widthAnchor.constraint(equalToConstant: view.bounds.width).isActive = true
 
         return albumImage
     }
@@ -81,10 +68,10 @@ class Solution: UIViewController {
     @objc func rotated() {
         if UIDevice.current.orientation.isLandscape {
             print("Landscape")
-            containerStackView.axis = .horizontal
+            stackView.axis = .horizontal
         } else {
             print("Portrait")
-            containerStackView.axis = .vertical
+            stackView.axis = .vertical
         }
         playerView.adjustForOrientiation()
 
