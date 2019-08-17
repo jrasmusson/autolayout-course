@@ -33,17 +33,15 @@ class PlayerView: UIView {
         let trackLabel = makeTrackLabel(withText: "Tom Sawyer")
         let albumLabel = makeAlbumLabel(withText: "Rush • Moving Pictures (2011 Remaster)")
         let playerView = ProgressRow()
-        // let spotifyButtonView = makeSpotifyButtonCustomView() // makeSpotifyButtonStackView()
-        let spotifyButton = makeSpotifyButton(withText: "PLAY ON SPOTIFY") // U R HERE
-        // set height anchor = 40
-        // then investigate distribution of stack holding both
+         let spotifyButtonView = makeSpotifyButtonCustomView() // makeSpotifyButtonStackView()
+//        let spotifyButtonView = makeSpotifyButton(withText: "PLAY ON SPOTIFY") // U R HERE
         
         addSubview(stackView)
         
         stackView.addArrangedSubview(trackLabel)
         stackView.addArrangedSubview(albumLabel)
         stackView.addArrangedSubview(playerView)
-        stackView.addArrangedSubview(spotifyButton)
+        stackView.addArrangedSubview(spotifyButtonView)
         
         // topAnchor & bottom are dynamic - see below
         stackView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
@@ -78,7 +76,7 @@ class PlayerView: UIView {
         
         let spotifyButtonStackView = makeStackView(withOrientation: .vertical)
         spotifyButtonStackView.isLayoutMarginsRelativeArrangement = true
-        spotifyButtonStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 40, bottom: 0, trailing: 40)
+        spotifyButtonStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24)
         
         spotifyButtonStackView.addArrangedSubview(spotifyButton)
         
@@ -94,12 +92,8 @@ class PlayerView: UIView {
         container.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
         container.addSubview(spotifyButton)
         
-        // set intrinsic height on this view? yes something with this
-        
         spotifyButton.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
         spotifyButton.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
-        spotifyButton.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 24).isActive = true
-        spotifyButton.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -24).isActive = true
         spotifyButton.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
         
         return container
