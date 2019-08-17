@@ -47,6 +47,10 @@ class PlayerView: UIView {
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
     
+    //
+    // When the orientation changes, we want to turn off the top & bottom constraints
+    // and center the playerView on the y-axis.
+    //
     func setupOrientationConstraints() {
         topAnchorConstraint = stackView.topAnchor.constraint(equalTo: topAnchor)
         bottomAnchorConstraint = stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
@@ -63,6 +67,9 @@ class PlayerView: UIView {
         }
     }
     
+    //
+    // This customView centers the button and allows it to size itself.
+    //
     func makeSpotifyButtonCustomView() -> UIView {
         let spotifyButton = makeSpotifyButton(withText: "PLAY ON SPOTIFY")
         
