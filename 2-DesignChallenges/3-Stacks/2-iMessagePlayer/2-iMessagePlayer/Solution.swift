@@ -55,7 +55,9 @@ class Solution: UIViewController {
     
     func makeAlbumImageView() -> UIImageView {
         let albumImage = makeImageView(named: "rush")
-        albumImage.heightAnchor.constraint(equalTo: albumImage.widthAnchor, multiplier: 1).isActive = true
+        let heightAnchorConstraint = albumImage.heightAnchor.constraint(equalTo: albumImage.widthAnchor)
+        heightAnchorConstraint.priority = .defaultHigh
+        heightAnchorConstraint.isActive = true
 
         return albumImage
     }
@@ -96,3 +98,4 @@ class Solution: UIViewController {
 //
 // 1. bottomAnchorConstraint needed for landscape
 // 2. playerStackView spacing done via layout margins
+// 3. heightAnchorConstraint breakable constraint
