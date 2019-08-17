@@ -33,8 +33,7 @@ class PlayerView: UIView {
         let trackLabel = makeTrackLabel(withText: "Tom Sawyer")
         let albumLabel = makeAlbumLabel(withText: "Rush • Moving Pictures (2011 Remaster)")
         let playerView = ProgressRow()
-         let spotifyButtonView = makeSpotifyButtonCustomView() // makeSpotifyButtonStackView()
-//        let spotifyButtonView = makeSpotifyButton(withText: "PLAY ON SPOTIFY") // U R HERE
+        let spotifyButtonView = makeSpotifyButtonCustomView()
         
         addSubview(stackView)
         
@@ -64,26 +63,6 @@ class PlayerView: UIView {
         }
     }
     
-    //
-    // Spotify button width
-    //
-    //    Getting the Spotify button, not spreading across the entire width of the phone is a challenge.
-    //    The StackView wants to 'fill' the entire width. But we don't want that. Two ways to handle.
-    
-    // Stick the button into another StackView and set it's padding via margins.
-    func makeSpotifyButtonStackView() -> UIStackView {
-        let spotifyButton = makeSpotifyButton(withText: "PLAY ON SPOTIFY")
-        
-        let spotifyButtonStackView = makeStackView(withOrientation: .vertical)
-        spotifyButtonStackView.isLayoutMarginsRelativeArrangement = true
-        spotifyButtonStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24)
-        
-        spotifyButtonStackView.addArrangedSubview(spotifyButton)
-        
-        return spotifyButtonStackView
-    }
-    
-    // Create a custom view, set constraints on the button in there, and then add it to the stackView.
     func makeSpotifyButtonCustomView() -> UIView {
         let spotifyButton = makeSpotifyButton(withText: "PLAY ON SPOTIFY")
         
