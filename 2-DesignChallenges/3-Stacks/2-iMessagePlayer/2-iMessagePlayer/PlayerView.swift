@@ -12,6 +12,7 @@ class PlayerView: UIView {
     
     var stackView: UIStackView
     var topAnchorConstraint = NSLayoutConstraint()
+    var bottomAnchorConstraint = NSLayoutConstraint()
     var centerYConstraint = NSLayoutConstraint()
 
     init() {
@@ -32,30 +33,35 @@ class PlayerView: UIView {
         let trackLabel = makeTrackLabel(withText: "Tom Sawyer")
         let albumLabel = makeAlbumLabel(withText: "Rush • Moving Pictures (2011 Remaster)")
         let playerView = ProgressRow()
-        let spotifyButtonView = makeSpotifyButtonStackView() // or makeSpotifyButtonCustomView()
+        // let spotifyButtonView = makeSpotifyButtonCustomView() // makeSpotifyButtonStackView()
+        let spotifyButton = makeSpotifyButton(withText: "PLAY ON SPOTIFY") // U R HERE
+        // set height anchor = 40
+        // then investigate distribution of stack holding both
         
         addSubview(stackView)
         
         stackView.addArrangedSubview(trackLabel)
         stackView.addArrangedSubview(albumLabel)
         stackView.addArrangedSubview(playerView)
-        stackView.addArrangedSubview(spotifyButtonView)
+        stackView.addArrangedSubview(spotifyButton)
         
-        // topAnchor is dynamic - see below
+        // topAnchor & bottom are dynamic - see below
         stackView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
     
     func setupOrientationConstraints() {
         topAnchorConstraint = stackView.topAnchor.constraint(equalTo: topAnchor)
+        bottomAnchorConstraint = stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
         centerYConstraint = stackView.centerYAnchor.constraint(equalTo: centerYAnchor)
         
         if UIDevice.current.orientation.isPortrait {
             topAnchorConstraint.isActive = true
+            bottomAnchorConstraint.isActive = true
             centerYConstraint.isActive = false
         } else {
             topAnchorConstraint.isActive = false
+            bottomAnchorConstraint.isActive = false
             centerYConstraint.isActive = true
         }
     }
@@ -87,6 +93,8 @@ class PlayerView: UIView {
         container.translatesAutoresizingMaskIntoConstraints = false
         container.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
         container.addSubview(spotifyButton)
+        
+        // set intrinsic height on this view? yes something with this
         
         spotifyButton.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
         spotifyButton.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true

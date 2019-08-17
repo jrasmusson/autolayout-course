@@ -91,6 +91,8 @@ func makeSpotifyButton(withText title: String) -> UIButton {
     
     button.setAttributedTitle(attributedText, for: .normal)
     
+    button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+    
     return button
 }
 

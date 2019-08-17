@@ -13,6 +13,8 @@ class Solution: UIViewController {
     var stackView: UIStackView
     var playerView: PlayerView
     
+    var bottomAnchorConstraint = NSLayoutConstraint()
+    
     init() {
         stackView = makeStackView(withOrientation: .vertical)
         playerView = PlayerView()
@@ -44,6 +46,9 @@ class Solution: UIViewController {
         stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        
+        // only activate this one if in landscape
+        bottomAnchorConstraint = stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
     }
     
     // MARK: - Factory methods
@@ -69,9 +74,11 @@ class Solution: UIViewController {
         if UIDevice.current.orientation.isLandscape {
             print("Landscape")
             stackView.axis = .horizontal
+            bottomAnchorConstraint.isActive = true
         } else {
             print("Portrait")
             stackView.axis = .vertical
+            bottomAnchorConstraint.isActive = false
         }
         playerView.adjustForOrientiation()
 
