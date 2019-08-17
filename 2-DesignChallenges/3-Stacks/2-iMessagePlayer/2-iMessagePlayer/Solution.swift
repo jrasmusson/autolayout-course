@@ -45,8 +45,6 @@ class Solution: UIViewController {
         
         // bottom
         let bottomStackView = makeBottomStackView()
-        let playerView = PlayerView()
-        
         bottomStackView.addArrangedSubview(playerView)
         
         // container
@@ -71,18 +69,16 @@ class Solution: UIViewController {
     }
     
     func makeBottomStackView() -> UIStackView {
-        let bottomStackView = makeStackView(withOrientation: .vertical)
-        bottomStackView.isLayoutMarginsRelativeArrangement = true
-        bottomStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
+        let stackView = makeStackView(withOrientation: .vertical)
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
         
-        return bottomStackView
+        return stackView
     }
     
     // MARK: - Rotation
     
     @objc func rotated() {
-        playerView.adjustForOrientiation()
-        
         if UIDevice.current.orientation.isLandscape {
             print("Landscape")
             containerStackView.axis = .horizontal
@@ -90,6 +86,8 @@ class Solution: UIViewController {
             print("Portrait")
             containerStackView.axis = .vertical
         }
+        playerView.adjustForOrientiation()
+
     }
     
     deinit {
