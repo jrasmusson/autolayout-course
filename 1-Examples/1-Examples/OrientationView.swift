@@ -42,7 +42,10 @@ class OrientationView: UIViewController {
         stackView.addArrangedSubview(blueView)
         
         view.addSubview(stackView)
-        
+
+        redView.heightAnchor.constraint(equalTo: blueView.heightAnchor).isActive = true
+        redView.widthAnchor.constraint(equalTo: blueView.widthAnchor).isActive = true
+
         stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
