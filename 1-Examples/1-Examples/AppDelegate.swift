@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let orientationLabs = [
             Lab(name: "Detect orientation", viewController: OrientationView()),
             Lab(name: "Adjust with constraints", viewController: AdjustConstraintsView()),
-            Lab(name: "Adjust with spacers", viewController: OrientationView()),
+            Lab(name: "Adjust with spacers", viewController: AdjustSpacersView()),
         ]
 
         let distributionViewController = LabViewController(labs: distributionLabs, navBarTitle: "Distributions")

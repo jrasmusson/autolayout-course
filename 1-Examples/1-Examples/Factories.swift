@@ -109,10 +109,12 @@ func makeScrollView() -> UIScrollView {
 
 public func makeSpacerView(height: CGFloat? = nil) -> UIView {
     let spacerView = UIView(frame: .zero)
+
     if let height = height {
         spacerView.heightAnchor.constraint(equalToConstant: height).setActiveBreakable()
     }
     spacerView.translatesAutoresizingMaskIntoConstraints = false
+
     return spacerView
 }
 
