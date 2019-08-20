@@ -33,6 +33,8 @@
 		7131727122F9C46400575BBF /* CHCRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131727022F9C46400575BBF /* CHCRImage.swift */; };
 		7185E0A022FB148100DFC3DE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E09F22FB148100DFC3DE /* CustomView.swift */; };
 		7185E0A322FB154200DFC3DE /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E0A222FB154200DFC3DE /* RowView.swift */; };
+		71B6D5C8230C2E0300F54F57 /* AdjustConstraintsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B6D5C7230C2E0300F54F57 /* AdjustConstraintsView.swift */; };
+		71B6D5CD230C2F2900F54F57 /* AdjustConstraintsBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B6D5CC230C2F2900F54F57 /* AdjustConstraintsBlueView.swift */; };
 		71D6E01122F9C6BF00400984 /* SimpleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6E01022F9C6BF00400984 /* SimpleStackView.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		7131727022F9C46400575BBF /* CHCRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRImage.swift; sourceTree = "<group>"; };
 		7185E09F22FB148100DFC3DE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		7185E0A222FB154200DFC3DE /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		71B6D5C7230C2E0300F54F57 /* AdjustConstraintsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustConstraintsView.swift; sourceTree = "<group>"; };
+		71B6D5CC230C2F2900F54F57 /* AdjustConstraintsBlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustConstraintsBlueView.swift; sourceTree = "<group>"; };
 		71D6E01022F9C6BF00400984 /* SimpleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				710EB6BA2302EF6A00404F03 /* OrientationView.swift */,
+				71B6D5C9230C2ED300F54F57 /* AdjustConstraints */,
 				710EB6BD2302FECE00404F03 /* RedView.swift */,
 				710EB6BF2302FF1E00404F03 /* BlueView.swift */,
 			);
@@ -161,6 +166,15 @@
 				7131727022F9C46400575BBF /* CHCRImage.swift */,
 			);
 			name = IntrinsicContentSize;
+			sourceTree = "<group>";
+		};
+		71B6D5C9230C2ED300F54F57 /* AdjustConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				71B6D5C7230C2E0300F54F57 /* AdjustConstraintsView.swift */,
+				71B6D5CC230C2F2900F54F57 /* AdjustConstraintsBlueView.swift */,
+			);
+			name = AdjustConstraints;
 			sourceTree = "<group>";
 		};
 		71D6E00D22F9C63100400984 /* StackViews */ = {
@@ -252,9 +266,11 @@
 				712F3A9322FDD99800345A0C /* StackSpacerView.swift in Sources */,
 				7131726A22F9C1E400575BBF /* Factories.swift in Sources */,
 				712F3A9022FDD8E300345A0C /* PaddingView.swift in Sources */,
+				71B6D5C8230C2E0300F54F57 /* AdjustConstraintsView.swift in Sources */,
 				712F3A8D22FDC28700345A0C /* ScrollableView.swift in Sources */,
 				712F3A9A22FE00FD00345A0C /* FillEqually.swift in Sources */,
 				7185E0A022FB148100DFC3DE /* CustomView.swift in Sources */,
+				71B6D5CD230C2F2900F54F57 /* AdjustConstraintsBlueView.swift in Sources */,
 				712F3A9C22FE012400345A0C /* EqualSpacing.swift in Sources */,
 				7131727122F9C46400575BBF /* CHCRImage.swift in Sources */,
 				712F3A9E22FE01E000345A0C /* EqualCentering.swift in Sources */,
