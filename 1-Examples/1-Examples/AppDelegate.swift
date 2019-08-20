@@ -32,7 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "CHCR - Image", viewController: CHCRImage()),
         ]
 
-        
+        //
+        // Stack labs
+        //
+
         let distributionLabs = [
             Lab(name: "Fill", viewController: Fill()),
             Lab(name: "Fill Equally", viewController: FillEqually()),
@@ -40,10 +43,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "Equal Centering", viewController: EqualCentering()),
             Lab(name: "CHCR Fill", viewController: CHCRFill()),
         ]
-        
-        let distributionViewController = LabViewController(labs: distributionLabs, navBarTitle: "Distributions")
 
-        
+        let orientationLabs = [
+            Lab(name: "Detect orientation", viewController: OrientationView()),
+            Lab(name: "Adapt with constraints", viewController: OrientationView()),
+            Lab(name: "Adapt with spacers", viewController: OrientationView()),
+        ]
+
+        let distributionViewController = LabViewController(labs: distributionLabs, navBarTitle: "Distributions")
+        let orientationViewController = LabViewController(labs: orientationLabs, navBarTitle: "Orientations")
+
         let stackViewLabs = [
             Lab(name: "Simple", viewController: SimpleStackView()),
             Lab(name: "Custom View", viewController: CustomView()),
@@ -51,8 +60,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "Padding", viewController: PaddingView()),
             Lab(name: "Spacer", viewController: StackSpacerView()),
             Lab(name: "Distributions", viewController: distributionViewController),
-            Lab(name: "Orientation", viewController: OrientationView()),
+            Lab(name: "Orientation", viewController: orientationViewController),
         ]
+
+        //
+        // Top level
+        //
 
         let anchorViewController = LabViewController(labs: anchorLabs, navBarTitle: "Anchors")
         let intrinsicViewController = LabViewController(labs: intrinsicLabs, navBarTitle: "Intrinsic Content Size")
