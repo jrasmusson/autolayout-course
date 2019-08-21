@@ -50,8 +50,3 @@ class ProgressRow: UIView {
         return CGSize(width: 200, height: buttonHeight)
     }
 }
-
-// Notes:
-//
-// 1. This control I did design flush to the edges (padding provided by stackView)
-
