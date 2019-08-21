@@ -32,10 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "CHCR - Image", viewController: CHCRImage()),
         ]
 
-        //
-        // Stack labs
-        //
-
         let distributionLabs = [
             Lab(name: "Fill", viewController: Fill()),
             Lab(name: "Fill Equally", viewController: FillEqually()),
@@ -44,14 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "CHCR Fill", viewController: CHCRFill()),
         ]
 
-        let orientationLabs = [
-            Lab(name: "Detect orientation", viewController: OrientationView()),
-            Lab(name: "Adjust with constraints", viewController: AdjustConstraintsView()),
-            Lab(name: "Adjust with spacers", viewController: AdjustSpacersView()),
-        ]
-
         let distributionViewController = LabViewController(labs: distributionLabs, navBarTitle: "Distributions")
-        let orientationViewController = LabViewController(labs: orientationLabs, navBarTitle: "Orientations")
 
         let stackViewLabs = [
             Lab(name: "Simple", viewController: SimpleStackView()),
@@ -60,7 +49,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "Padding", viewController: PaddingView()),
             Lab(name: "Spacer", viewController: StackSpacerView()),
             Lab(name: "Distributions", viewController: distributionViewController),
-            Lab(name: "Orientation", viewController: orientationViewController),
+        ]
+
+        let orientationLabs = [
+            Lab(name: "Detect orientation", viewController: OrientationView()),
+            Lab(name: "Adjust with constraints", viewController: AdjustConstraintsView()),
+            Lab(name: "Adjust with spacers", viewController: AdjustSpacersView()),
         ]
 
         //
@@ -70,11 +64,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let anchorViewController = LabViewController(labs: anchorLabs, navBarTitle: "Anchors")
         let intrinsicViewController = LabViewController(labs: intrinsicLabs, navBarTitle: "Intrinsic Content Size")
         let stackViewController = LabViewController(labs: stackViewLabs, navBarTitle: "Stack Views")
+        let orientationViewController = LabViewController(labs: orientationLabs, navBarTitle: "Orientations")
         
         let rootLabs = [
             Lab(name: "Anchors", viewController: anchorViewController),
             Lab(name: "Intrinsic Content Size", viewController: intrinsicViewController),
             Lab(name: "Stack Views", viewController: stackViewController),
+            Lab(name: "Orientation", viewController: orientationViewController),
         ]
 
         let rootViewController = LabViewController(labs: rootLabs, navBarTitle: "Examples")

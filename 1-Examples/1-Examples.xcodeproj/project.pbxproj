@@ -134,6 +134,7 @@
 				7131725A22F9BF9300575BBF /* Anchors */,
 				7131726B22F9C3FA00575BBF /* IntrinsicContentSize */,
 				71D6E00D22F9C63100400984 /* StackViews */,
+				710EB6BC2302FE9D00404F03 /* Orientations */,
 				7131726922F9C1E400575BBF /* Factories.swift */,
 				712F3A9422FDF59800345A0C /* LabViewController.swift */,
 			);
@@ -201,7 +202,6 @@
 				712F3A8C22FDC28700345A0C /* ScrollableView.swift */,
 				712F3A8F22FDD8E300345A0C /* PaddingView.swift */,
 				712F3A9222FDD99800345A0C /* StackSpacerView.swift */,
-				710EB6BC2302FE9D00404F03 /* Orientations */,
 			);
 			name = StackViews;
 			sourceTree = "<group>";
