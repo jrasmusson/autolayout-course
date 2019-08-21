@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  2-iMessagePlayer
+//  AdjustingWithConstraints
 //
-//  Created by Jonathan Rasmusson Work Pro on 2019-08-11.
-//  Copyright © 2019 Rasmusson Software Consulting. All rights reserved.
+//  Created by Jonathan Rasmusson (Contractor) on 2019-08-21.
+//  Copyright © 2019 Jonathan Rasmusson. All rights reserved.
 //
 
 import UIKit
@@ -17,13 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
-        
+
         //        let navigatorController = UINavigationController(rootViewController: Challenge())
         let navigatorController = UINavigationController(rootViewController: Solution())
         window?.rootViewController = navigatorController
-        
+
         return true
     }
+
 
 }
 

@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		713E978423044C2700133022 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E978323044C2700133022 /* PlayerView.swift */; };
-		71FFB15323005331009BBF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB15223005331009BBF1A /* AppDelegate.swift */; };
-		71FFB15A23005333009BBF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FFB15923005333009BBF1A /* Assets.xcassets */; };
-		71FFB15D23005333009BBF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FFB15B23005333009BBF1A /* LaunchScreen.storyboard */; };
-		71FFB166230053C5009BBF1A /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB165230053C5009BBF1A /* Solution.swift */; };
-		71FFB16A23005440009BBF1A /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB16923005440009BBF1A /* Factories.swift */; };
-		71FFB16C23005CDD009BBF1A /* ProgressRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFB16B23005CDD009BBF1A /* ProgressRow.swift */; };
+		71E6BA7C230D85C000DA04E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6BA7B230D85C000DA04E5 /* AppDelegate.swift */; };
+		71E6BA83230D85C200DA04E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E6BA82230D85C200DA04E5 /* Assets.xcassets */; };
+		71E6BA86230D85C200DA04E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E6BA84230D85C200DA04E5 /* LaunchScreen.storyboard */; };
+		71E6BA8F230D864F00DA04E5 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6BA8E230D864F00DA04E5 /* Solution.swift */; };
+		71E6BA91230D865D00DA04E5 /* ProgressRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6BA90230D865D00DA04E5 /* ProgressRow.swift */; };
+		71E6BA93230D866800DA04E5 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6BA92230D866800DA04E5 /* PlayerView.swift */; };
+		71E6BA95230D867500DA04E5 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6BA94230D867500DA04E5 /* Factories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		713E978323044C2700133022 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		71FFB14F23005331009BBF1A /* 2-iMessagePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2-iMessagePlayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		71FFB15223005331009BBF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71FFB15923005333009BBF1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		71FFB15C23005333009BBF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		71FFB15E23005333009BBF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71FFB165230053C5009BBF1A /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
-		71FFB16923005440009BBF1A /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
-		71FFB16B23005CDD009BBF1A /* ProgressRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRow.swift; sourceTree = "<group>"; };
+		71E6BA78230D85C000DA04E5 /* AdjustingWithConstraints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdjustingWithConstraints.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E6BA7B230D85C000DA04E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71E6BA82230D85C200DA04E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71E6BA85230D85C200DA04E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71E6BA87230D85C200DA04E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E6BA8E230D864F00DA04E5 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		71E6BA90230D865D00DA04E5 /* ProgressRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRow.swift; sourceTree = "<group>"; };
+		71E6BA92230D866800DA04E5 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		71E6BA94230D867500DA04E5 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		71FFB14C23005331009BBF1A /* Frameworks */ = {
+		71E6BA75230D85C000DA04E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,41 +39,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		71FFB14623005331009BBF1A = {
+		71E6BA6F230D85C000DA04E5 = {
 			isa = PBXGroup;
 			children = (
-				71FFB15123005331009BBF1A /* 2-iMessagePlayer */,
-				71FFB15023005331009BBF1A /* Products */,
+				71E6BA7A230D85C000DA04E5 /* AdjustingWithConstraints */,
+				71E6BA79230D85C000DA04E5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		71FFB15023005331009BBF1A /* Products */ = {
+		71E6BA79230D85C000DA04E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71FFB14F23005331009BBF1A /* 2-iMessagePlayer.app */,
+				71E6BA78230D85C000DA04E5 /* AdjustingWithConstraints.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		71FFB15123005331009BBF1A /* 2-iMessagePlayer */ = {
+		71E6BA7A230D85C000DA04E5 /* AdjustingWithConstraints */ = {
 			isa = PBXGroup;
 			children = (
-				71FFB16423005347009BBF1A /* Files */,
-				71FFB15223005331009BBF1A /* AppDelegate.swift */,
-				71FFB165230053C5009BBF1A /* Solution.swift */,
-				71FFB16B23005CDD009BBF1A /* ProgressRow.swift */,
-				713E978323044C2700133022 /* PlayerView.swift */,
-				71FFB16923005440009BBF1A /* Factories.swift */,
+				71E6BA8D230D85E700DA04E5 /* Files */,
+				71E6BA7B230D85C000DA04E5 /* AppDelegate.swift */,
+				71E6BA8E230D864F00DA04E5 /* Solution.swift */,
+				71E6BA90230D865D00DA04E5 /* ProgressRow.swift */,
+				71E6BA92230D866800DA04E5 /* PlayerView.swift */,
+				71E6BA94230D867500DA04E5 /* Factories.swift */,
 			);
-			path = "2-iMessagePlayer";
+			path = AdjustingWithConstraints;
 			sourceTree = "<group>";
 		};
-		71FFB16423005347009BBF1A /* Files */ = {
+		71E6BA8D230D85E700DA04E5 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				71FFB15E23005333009BBF1A /* Info.plist */,
-				71FFB15B23005333009BBF1A /* LaunchScreen.storyboard */,
-				71FFB15923005333009BBF1A /* Assets.xcassets */,
+				71E6BA87230D85C200DA04E5 /* Info.plist */,
+				71E6BA84230D85C200DA04E5 /* LaunchScreen.storyboard */,
+				71E6BA82230D85C200DA04E5 /* Assets.xcassets */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -81,39 +81,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		71FFB14E23005331009BBF1A /* 2-iMessagePlayer */ = {
+		71E6BA77230D85C000DA04E5 /* AdjustingWithConstraints */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71FFB16123005333009BBF1A /* Build configuration list for PBXNativeTarget "2-iMessagePlayer" */;
+			buildConfigurationList = 71E6BA8A230D85C200DA04E5 /* Build configuration list for PBXNativeTarget "AdjustingWithConstraints" */;
 			buildPhases = (
-				71FFB14B23005331009BBF1A /* Sources */,
-				71FFB14C23005331009BBF1A /* Frameworks */,
-				71FFB14D23005331009BBF1A /* Resources */,
+				71E6BA74230D85C000DA04E5 /* Sources */,
+				71E6BA75230D85C000DA04E5 /* Frameworks */,
+				71E6BA76230D85C000DA04E5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "2-iMessagePlayer";
-			productName = "2-iMessagePlayer";
-			productReference = 71FFB14F23005331009BBF1A /* 2-iMessagePlayer.app */;
+			name = AdjustingWithConstraints;
+			productName = AdjustingWithConstraints;
+			productReference = 71E6BA78230D85C000DA04E5 /* AdjustingWithConstraints.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		71FFB14723005331009BBF1A /* Project object */ = {
+		71E6BA70230D85C000DA04E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = "Rasmusson Software Consulting";
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jonathan Rasmusson";
 				TargetAttributes = {
-					71FFB14E23005331009BBF1A = {
-						CreatedOnToolsVersion = 10.3;
+					71E6BA77230D85C000DA04E5 = {
+						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
-			buildConfigurationList = 71FFB14A23005331009BBF1A /* Build configuration list for PBXProject "2-iMessagePlayer" */;
+			buildConfigurationList = 71E6BA73230D85C000DA04E5 /* Build configuration list for PBXProject "AdjustingWithConstraints" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,48 +121,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 71FFB14623005331009BBF1A;
-			productRefGroup = 71FFB15023005331009BBF1A /* Products */;
+			mainGroup = 71E6BA6F230D85C000DA04E5;
+			productRefGroup = 71E6BA79230D85C000DA04E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				71FFB14E23005331009BBF1A /* 2-iMessagePlayer */,
+				71E6BA77230D85C000DA04E5 /* AdjustingWithConstraints */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		71FFB14D23005331009BBF1A /* Resources */ = {
+		71E6BA76230D85C000DA04E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71FFB15D23005333009BBF1A /* LaunchScreen.storyboard in Resources */,
-				71FFB15A23005333009BBF1A /* Assets.xcassets in Resources */,
+				71E6BA86230D85C200DA04E5 /* LaunchScreen.storyboard in Resources */,
+				71E6BA83230D85C200DA04E5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		71FFB14B23005331009BBF1A /* Sources */ = {
+		71E6BA74230D85C000DA04E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71FFB16A23005440009BBF1A /* Factories.swift in Sources */,
-				71FFB15323005331009BBF1A /* AppDelegate.swift in Sources */,
-				71FFB166230053C5009BBF1A /* Solution.swift in Sources */,
-				71FFB16C23005CDD009BBF1A /* ProgressRow.swift in Sources */,
-				713E978423044C2700133022 /* PlayerView.swift in Sources */,
+				71E6BA8F230D864F00DA04E5 /* Solution.swift in Sources */,
+				71E6BA7C230D85C000DA04E5 /* AppDelegate.swift in Sources */,
+				71E6BA91230D865D00DA04E5 /* ProgressRow.swift in Sources */,
+				71E6BA95230D867500DA04E5 /* Factories.swift in Sources */,
+				71E6BA93230D866800DA04E5 /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		71FFB15B23005333009BBF1A /* LaunchScreen.storyboard */ = {
+		71E6BA84230D85C200DA04E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71FFB15C23005333009BBF1A /* Base */,
+				71E6BA85230D85C200DA04E5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		71FFB15F23005333009BBF1A /* Debug */ = {
+		71E6BA88230D85C200DA04E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -231,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		71FFB16023005333009BBF1A /* Release */ = {
+		71E6BA89230D85C200DA04E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,36 +286,34 @@
 			};
 			name = Release;
 		};
-		71FFB16223005333009BBF1A /* Debug */ = {
+		71E6BA8B230D85C200DA04E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "2-iMessagePlayer/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				INFOPLIST_FILE = AdjustingWithConstraints/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rsc.--iMessagePlayer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsc.AdjustingWithConstraints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		71FFB16323005333009BBF1A /* Release */ = {
+		71E6BA8C230D85C200DA04E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "2-iMessagePlayer/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				INFOPLIST_FILE = AdjustingWithConstraints/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rsc.--iMessagePlayer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsc.AdjustingWithConstraints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		71FFB14A23005331009BBF1A /* Build configuration list for PBXProject "2-iMessagePlayer" */ = {
+		71E6BA73230D85C000DA04E5 /* Build configuration list for PBXProject "AdjustingWithConstraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71FFB15F23005333009BBF1A /* Debug */,
-				71FFB16023005333009BBF1A /* Release */,
+				71E6BA88230D85C200DA04E5 /* Debug */,
+				71E6BA89230D85C200DA04E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71FFB16123005333009BBF1A /* Build configuration list for PBXNativeTarget "2-iMessagePlayer" */ = {
+		71E6BA8A230D85C200DA04E5 /* Build configuration list for PBXNativeTarget "AdjustingWithConstraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71FFB16223005333009BBF1A /* Debug */,
-				71FFB16323005333009BBF1A /* Release */,
+				71E6BA8B230D85C200DA04E5 /* Debug */,
+				71E6BA8C230D85C200DA04E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 71FFB14723005331009BBF1A /* Project object */;
+	rootObject = 71E6BA70230D85C000DA04E5 /* Project object */;
 }
