@@ -33,6 +33,7 @@
 		7131727122F9C46400575BBF /* CHCRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131727022F9C46400575BBF /* CHCRImage.swift */; };
 		7135C251230ED67600F34786 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135C250230ED67600F34786 /* Constants.swift */; };
 		7135C253230EDA3900F34786 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135C252230EDA3900F34786 /* Constraints.swift */; };
+		7135C255230EDBED00F34786 /* Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135C254230EDBED00F34786 /* Visibility.swift */; };
 		7185E0A022FB148100DFC3DE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E09F22FB148100DFC3DE /* CustomView.swift */; };
 		7185E0A322FB154200DFC3DE /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E0A222FB154200DFC3DE /* RowView.swift */; };
 		71B6D5C8230C2E0300F54F57 /* AdjustConstraintsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B6D5C7230C2E0300F54F57 /* AdjustConstraintsView.swift */; };
@@ -71,6 +72,7 @@
 		7131727022F9C46400575BBF /* CHCRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRImage.swift; sourceTree = "<group>"; };
 		7135C250230ED67600F34786 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7135C252230EDA3900F34786 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		7135C254230EDBED00F34786 /* Visibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visibility.swift; sourceTree = "<group>"; };
 		7185E09F22FB148100DFC3DE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		7185E0A222FB154200DFC3DE /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		71B6D5C7230C2E0300F54F57 /* AdjustConstraintsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustConstraintsView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				7135C250230ED67600F34786 /* Constants.swift */,
 				7135C252230EDA3900F34786 /* Constraints.swift */,
+				7135C254230EDBED00F34786 /* Visibility.swift */,
 			);
 			name = AdaptingLayouts;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				7131726D22F9C44900575BBF /* OverrideLabel.swift in Sources */,
 				7131726222F9C09D00575BBF /* LayoutMargins.swift in Sources */,
 				71D6E01122F9C6BF00400984 /* SimpleStackView.swift in Sources */,
+				7135C255230EDBED00F34786 /* Visibility.swift in Sources */,
 				7131726F22F9C45900575BBF /* CHCRForm.swift in Sources */,
 				710EB6BE2302FECE00404F03 /* RedView.swift in Sources */,
 				7131726822F9C0C600575BBF /* ReadableContentGuides.swift in Sources */,

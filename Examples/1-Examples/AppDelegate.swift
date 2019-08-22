@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let adaptiveLabs = [
             Lab(name: "Constants", viewController: Constants()),
             Lab(name: "Constraints", viewController: Constraints()),
-            Lab(name: "Visibility", viewController: AdjustSpacersView()),
+            Lab(name: "Visibility", viewController: Visibility()),
         ]
 
         let orientationLabs = [
