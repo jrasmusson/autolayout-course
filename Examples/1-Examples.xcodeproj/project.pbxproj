@@ -31,6 +31,7 @@
 		7131726D22F9C44900575BBF /* OverrideLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131726C22F9C44900575BBF /* OverrideLabel.swift */; };
 		7131726F22F9C45900575BBF /* CHCRForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131726E22F9C45900575BBF /* CHCRForm.swift */; };
 		7131727122F9C46400575BBF /* CHCRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131727022F9C46400575BBF /* CHCRImage.swift */; };
+		7135C251230ED67600F34786 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135C250230ED67600F34786 /* Constants.swift */; };
 		7185E0A022FB148100DFC3DE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E09F22FB148100DFC3DE /* CustomView.swift */; };
 		7185E0A322FB154200DFC3DE /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E0A222FB154200DFC3DE /* RowView.swift */; };
 		71B6D5C8230C2E0300F54F57 /* AdjustConstraintsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B6D5C7230C2E0300F54F57 /* AdjustConstraintsView.swift */; };
@@ -67,6 +68,7 @@
 		7131726C22F9C44900575BBF /* OverrideLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideLabel.swift; sourceTree = "<group>"; };
 		7131726E22F9C45900575BBF /* CHCRForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRForm.swift; sourceTree = "<group>"; };
 		7131727022F9C46400575BBF /* CHCRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHCRImage.swift; sourceTree = "<group>"; };
+		7135C250230ED67600F34786 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7185E09F22FB148100DFC3DE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		7185E0A222FB154200DFC3DE /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		71B6D5C7230C2E0300F54F57 /* AdjustConstraintsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustConstraintsView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,8 @@
 				7131726B22F9C3FA00575BBF /* IntrinsicContentSize */,
 				71D6E00D22F9C63100400984 /* StackViews */,
 				710EB6BC2302FE9D00404F03 /* Orientations */,
+				7135C24F230ED63A00F34786 /* AdaptingLayouts */,
+				7131724722F9BF4700575BBF /* AppDelegate.swift */,
 				7131726922F9C1E400575BBF /* Factories.swift */,
 				712F3A9422FDF59800345A0C /* LabViewController.swift */,
 			);
@@ -147,7 +151,6 @@
 				7131725022F9BF4800575BBF /* LaunchScreen.storyboard */,
 				7131725322F9BF4800575BBF /* Info.plist */,
 				7131724E22F9BF4800575BBF /* Assets.xcassets */,
-				7131724722F9BF4700575BBF /* AppDelegate.swift */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -172,6 +175,14 @@
 				7131727022F9C46400575BBF /* CHCRImage.swift */,
 			);
 			name = IntrinsicContentSize;
+			sourceTree = "<group>";
+		};
+		7135C24F230ED63A00F34786 /* AdaptingLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				7135C250230ED67600F34786 /* Constants.swift */,
+			);
+			name = AdaptingLayouts;
 			sourceTree = "<group>";
 		};
 		71B6D5C9230C2ED300F54F57 /* AdjustConstraints */ = {
@@ -281,6 +292,7 @@
 				712F3A9322FDD99800345A0C /* StackSpacerView.swift in Sources */,
 				7131726A22F9C1E400575BBF /* Factories.swift in Sources */,
 				712F3A9022FDD8E300345A0C /* PaddingView.swift in Sources */,
+				7135C251230ED67600F34786 /* Constants.swift in Sources */,
 				71B6D5C8230C2E0300F54F57 /* AdjustConstraintsView.swift in Sources */,
 				71B6D5D0230C3A5400F54F57 /* AdjustSpacersView.swift in Sources */,
 				712F3A8D22FDC28700345A0C /* ScrollableView.swift in Sources */,

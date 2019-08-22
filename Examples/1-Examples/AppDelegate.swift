@@ -57,6 +57,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "Adjust with spacers", viewController: AdjustSpacersView()),
         ]
 
+        let adaptiveLabs = [
+            Lab(name: "Constants", viewController: Constants()),
+            Lab(name: "Constraints", viewController: AdjustConstraintsView()),
+            Lab(name: "Visibility", viewController: AdjustSpacersView()),
+        ]
+
         //
         // Top level
         //
@@ -65,12 +71,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let intrinsicViewController = LabViewController(labs: intrinsicLabs, navBarTitle: "Intrinsic Content Size")
         let stackViewController = LabViewController(labs: stackViewLabs, navBarTitle: "Stack Views")
         let orientationViewController = LabViewController(labs: orientationLabs, navBarTitle: "Orientations")
-        
+        let adaptiveViewController = LabViewController(labs: adaptiveLabs, navBarTitle: "Adaptive Layouts")
+
         let rootLabs = [
             Lab(name: "Anchors", viewController: anchorViewController),
             Lab(name: "Intrinsic Content Size", viewController: intrinsicViewController),
             Lab(name: "Stack Views", viewController: stackViewController),
             Lab(name: "Orientation", viewController: orientationViewController),
+            Lab(name: "Adaptive Layouts", viewController: adaptiveViewController),
         ]
 
         let rootViewController = LabViewController(labs: rootLabs, navBarTitle: "Examples")
