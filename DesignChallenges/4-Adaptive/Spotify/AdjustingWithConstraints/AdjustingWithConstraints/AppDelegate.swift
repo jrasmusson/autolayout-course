@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
 
-        //        let navigatorController = UINavigationController(rootViewController: Challenge())
         let navigatorController = UINavigationController(rootViewController: Solution())
         window?.rootViewController = navigatorController
 

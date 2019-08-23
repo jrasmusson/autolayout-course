@@ -12,7 +12,6 @@ class PlayerView: UIView {
 
     var stackView: UIStackView
     var topAnchorConstraint = NSLayoutConstraint()
-    var bottomAnchorConstraint = NSLayoutConstraint()
     var centerYConstraint = NSLayoutConstraint()
 
     init() {
@@ -22,7 +21,7 @@ class PlayerView: UIView {
         super.init(frame: .zero)
 
         setupViews()
-        setupOrientationConstraints()
+        setupInitialOrientation()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -42,23 +41,20 @@ class PlayerView: UIView {
         stackView.addArrangedSubview(playerView)
         stackView.addArrangedSubview(spotifyButtonView)
 
-        // topAnchor & bottom are dynamic - see below
+        // static constraints
         stackView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
 
-    func setupOrientationConstraints() {
+    func setupInitialOrientation() {
         topAnchorConstraint = stackView.topAnchor.constraint(equalTo: topAnchor)
-        bottomAnchorConstraint = stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
         centerYConstraint = stackView.centerYAnchor.constraint(equalTo: centerYAnchor)
 
         if UIDevice.current.orientation.isPortrait {
             topAnchorConstraint.isActive = true
-            bottomAnchorConstraint.isActive = true
             centerYConstraint.isActive = false
         } else {
             topAnchorConstraint.isActive = false
-            bottomAnchorConstraint.isActive = false
             centerYConstraint.isActive = true
         }
     }
