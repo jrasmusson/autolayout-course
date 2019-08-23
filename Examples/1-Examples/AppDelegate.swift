@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Lab(name: "Intrinsic Content Size", viewController: intrinsicViewController),
             Lab(name: "Stack Views", viewController: stackViewController),
             Lab(name: "Adaptive Layouts", viewController: adaptiveViewController),
-            Lab(name: "Orientation", viewController: orientationViewController),
+//            Lab(name: "Orientation", viewController: orientationViewController),
         ]
 
         let rootViewController = LabViewController(labs: rootLabs, navBarTitle: "Examples")

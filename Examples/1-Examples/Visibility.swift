@@ -22,7 +22,7 @@ class Visibility: UIViewController {
         stackView.distribution = .fillProportionally
 
         let label1 = makeLabel(withText: "Now you see me", size: 32)
-        let button = makeButton(withText: "Show/Hide")
+        let button = makeButton(withText: "Show/Hide", size: 32)
 
         stackView.addArrangedSubview(label1)
         stackView.addArrangedSubview(label2)

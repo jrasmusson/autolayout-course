@@ -51,6 +51,15 @@ func makeButton(withText text: String) -> UIButton {
     button.titleLabel?.adjustsFontSizeToFitWidth = true
     button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
     button.backgroundColor = .blue
+    button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+
+    return button
+}
+
+func makeButton(withText text: String, size: CGFloat = 18, color: UIColor = .blue) -> UIButton {
+    let button = makeButton(withText: text)
+    button.backgroundColor = color
+    button.titleLabel?.font = UIFont.systemFont(ofSize: size)
 
     return button
 }
@@ -58,7 +67,7 @@ func makeButton(withText text: String) -> UIButton {
 func makeButton(withText text: String, color: UIColor) -> UIButton {
     let button = makeButton(withText: text)
     button.backgroundColor = color
-
+    
     return button
 }
 
