@@ -12,8 +12,6 @@
 		71D33597231427F300264D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D33595231427F300264D83 /* LaunchScreen.storyboard */; };
 		71D335A02314287C00264D83 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3359F2314287C00264D83 /* Challenge.swift */; };
 		71D335A22314288B00264D83 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D335A12314288B00264D83 /* Solution.swift */; };
-		71D335A42314289300264D83 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D335A32314289300264D83 /* RowView.swift */; };
-		71D335A8231428B400264D83 /* CrossfadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D335A7231428B400264D83 /* CrossfadeView.swift */; };
 		71D335AA231428BF00264D83 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D335A9231428BF00264D83 /* Factories.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +23,6 @@
 		71D33598231427F300264D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71D3359F2314287C00264D83 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		71D335A12314288B00264D83 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
-		71D335A32314289300264D83 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
-		71D335A7231428B400264D83 /* CrossfadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadeView.swift; sourceTree = "<group>"; };
 		71D335A9231428BF00264D83 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,8 +60,6 @@
 				71D3358C231427F300264D83 /* AppDelegate.swift */,
 				71D3359F2314287C00264D83 /* Challenge.swift */,
 				71D335A12314288B00264D83 /* Solution.swift */,
-				71D335A32314289300264D83 /* RowView.swift */,
-				71D335A7231428B400264D83 /* CrossfadeView.swift */,
 				71D335A9231428BF00264D83 /* Factories.swift */,
 			);
 			path = BasicAnchors;
@@ -155,8 +149,6 @@
 				71D3358D231427F300264D83 /* AppDelegate.swift in Sources */,
 				71D335A02314287C00264D83 /* Challenge.swift in Sources */,
 				71D335A22314288B00264D83 /* Solution.swift in Sources */,
-				71D335A42314289300264D83 /* RowView.swift in Sources */,
-				71D335A8231428B400264D83 /* CrossfadeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
