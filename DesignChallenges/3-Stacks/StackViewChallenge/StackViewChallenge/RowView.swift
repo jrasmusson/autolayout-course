@@ -1,9 +1,9 @@
 //
 //  RowView.swift
-//  BasicStacks
+//  CustomViewsSolution
 //
-//  Created by Jonathan Rasmusson (Contractor) on 2019-08-26.
-//  Copyright © 2019 Jonathan Rasmusson. All rights reserved.
+//  Created by Jonathan Rasmusson Work Pro on 2019-10-17.
+//  Copyright © 2019 Rasmusson Software Consulting. All rights reserved.
 //
 
 import UIKit
@@ -33,6 +33,7 @@ class RowView: UIView {
         addSubview(titleLabel)
         addSubview(onOffSwith)
 
+        // Everything flush to edges...
         titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
 
@@ -40,6 +41,7 @@ class RowView: UIView {
         onOffSwith.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor).isActive = true
     }
 
+    // A suggestion about size. But one that can be overridden.
     override var intrinsicContentSize: CGSize {
         return CGSize(width: 200, height: 31)
     }

@@ -1,12 +1,45 @@
 //
 //  Solution.swift
-//  BasicStacks
+//  StackViewChallenge
 //
-//  Created by Jonathan Rasmusson (Contractor) on 2019-08-26.
-//  Copyright © 2019 Jonathan Rasmusson. All rights reserved.
+//  Created by Jonathan Rasmusson Work Pro on 2019-10-17.
+//  Copyright © 2019 Rasmusson Software Consulting. All rights reserved.
 //
 
 import UIKit
+
+   /*
+    
+    Solution:
+
+    ┌────────StackView─────────┐
+    │                          │
+    │        offlineRow        │
+    │                          │
+    │      offlineSublabel     │
+    │                          │   axis = vertical
+    │       crossfadeView      │   distribution = fill
+    │                          │   alignment = fill
+    │        gaplessRow        │   spacing = 20
+    │                          │
+    │       hideSongsRow       │
+    │                          │
+    │     normalizationRow     │
+    │                          │
+    └──────────────────────────┘
+    
+    Things of note:
+ 
+    1. No bottom constraint on StackView required.
+ 
+        Because the StackView is fully intrinsically sized, we don't need a button constraint pinning it to the bottom.
+        We could add one if we wanted it to fully stretch. But if we want it to retain it's size non is required.
+ 
+    2. Notice the how many fewer constraints are required.
+ 
+        Our original layout for this back in the anchors design challenge required around 30 constraints.
+        With the StackView, and all of it's built in spacing we now require ~12. Considerably fewer.
+    */
 
 class Solution: UIViewController {
 
@@ -49,21 +82,8 @@ class Solution: UIViewController {
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
 
 
-        // for padding and spacing
+        // Padding and spacing
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
     }
 }
-
-// Notes:
-//
-// 1. We don't need to pin stackview to the bottom (top, leading, trailing are enough)
-//        stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-//
-// 2. We don't need the width constraint we needed with the scrollview (margins respected)
-//        offlineRow.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 1, constant: -32).isActive = true
-//
-// 3. Reduced number of constraints by two thrirds (30 to 12).
-//
-
-

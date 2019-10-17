@@ -61,9 +61,9 @@
 				71AC016E2358A835005C42BC /* Files */,
 				71AC015A2358A794005C42BC /* AppDelegate.swift */,
 				71AC01712358A86E005C42BC /* Solution.swift */,
-				71AC016F2358A851005C42BC /* Factories.swift */,
 				71AC01982358B28C005C42BC /* RowView.swift */,
 				71AC019A2358B29D005C42BC /* CrossfadeView.swift */,
+				71AC016F2358A851005C42BC /* Factories.swift */,
 			);
 			path = CustomViewsSolution;
 			sourceTree = "<group>";
