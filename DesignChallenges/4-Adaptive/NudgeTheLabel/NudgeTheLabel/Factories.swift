@@ -42,36 +42,7 @@ func makeSecondaryLabel(withText text: String) -> UILabel {
     return label
 }
 
-// MARK: - Buttons
-
-func makeButton(withText text: String) -> UIButton {
-    let button = UIButton()
-    button.translatesAutoresizingMaskIntoConstraints = false
-    button.setTitle(text, for: .normal)
-    button.titleLabel?.adjustsFontSizeToFitWidth = true
-    button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
-    button.backgroundColor = .blue
-    button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-    
-    return button
-}
-
-func makeButton(withText text: String, size: CGFloat = 18, color: UIColor = .blue) -> UIButton {
-    let button = makeButton(withText: text)
-    button.backgroundColor = color
-    button.titleLabel?.font = UIFont.systemFont(ofSize: size)
-    
-    return button
-}
-
-func makeButton(withText text: String, color: UIColor) -> UIButton {
-    let button = makeButton(withText: text)
-    button.backgroundColor = color
-    
-    return button
-}
-
-// MKAR: - Misc
+// MARK: - Misc
 
 func makeTextField(withPlaceholderText placeHolderText: String) -> UITextField {
     let textField = UITextField()
