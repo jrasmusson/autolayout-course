@@ -64,15 +64,5 @@ class CHCRImage: UIViewController {
 
         return label
     }
-
-    func makeButton(withText text: String) -> UIButton {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(text, for: .normal)
-        button.backgroundColor = .blue
-        button.contentEdgeInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
-
-        return button
-    }
 }
 

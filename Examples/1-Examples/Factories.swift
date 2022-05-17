@@ -44,6 +44,8 @@ func makeSecondaryLabel(withText text: String) -> UILabel {
 
 // MARK: - Buttons
 
+// Old - pre iOS 15
+/*
 func makeButton(withText text: String) -> UIButton {
     let button = UIButton()
     button.translatesAutoresizingMaskIntoConstraints = false
@@ -53,6 +55,20 @@ func makeButton(withText text: String) -> UIButton {
     button.backgroundColor = .blue
     button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
 
+    return button
+}
+*/
+
+func makeButton(withText text: String) -> UIButton {
+    let button = UIButton(type: .system)
+    button.translatesAutoresizingMaskIntoConstraints = false
+    button.setTitle(text, for: .normal)
+
+    var config = UIButton.Configuration.filled()
+    config.baseBackgroundColor = .systemBlue
+    config.cornerStyle = .capsule
+    config.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16)
+    button.configuration = config
     return button
 }
 
