@@ -75,14 +75,14 @@ func makeProgressView() -> UIProgressView {
 }
 
 func makeSpotifyButton(withText title: String) -> UIButton {
-    let button = UIButton()
+    let button = UIButton(type: .system)
     button.translatesAutoresizingMaskIntoConstraints = false
-    button.titleLabel?.minimumScaleFactor = 0.5 // default 0
-    button.titleLabel?.adjustsFontSizeToFitWidth = true // default false
-    button.backgroundColor = .spotifyGreen
-    button.setTitleColor(.white, for: .normal)
-    button.layer.cornerRadius = buttonHeight / 2
-    button.contentEdgeInsets = UIEdgeInsets(top: 10, left: buttonHeight, bottom: 10, right: buttonHeight)
+
+    var config = UIButton.Configuration.filled()
+    config.baseBackgroundColor = .spotifyGreen
+    config.cornerStyle = .capsule
+    config.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: buttonHeight, bottom: 10, trailing: buttonHeight)
+    button.configuration = config
 
     let attributedText = NSMutableAttributedString(string: title, attributes: [
         NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
